@@ -1,0 +1,836 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Razil\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Razil\\AppData\\Local\\Temp\\.vsdbgsrc\\d60fbd076558f7f759c9bf5e4237b6a4301b77fac165a475d6fe6975c99f5d83\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\testimonial\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\testimonial\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\team\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\team\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\thankyou\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\thankyou\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\thankyoucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\thankyoucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|c:\\users\\razil\\source\\repos\\furnitureshopprojectrazil\\furnitureshopprojectrazil\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BA1B4A-8EE3-48FC-8698-C7B11E65D45F}|FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj|solutionrelative:furnitureshopprojectrazil\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T10:09:04.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T10:03:44.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T08:59:26.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T08:53:42.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-24T08:46:59.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Program.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Program.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Program.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:09:03.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwHcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T08:59:36.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T08:54:08.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T08:54:12.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\About.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\About.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\About.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\About.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAxwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:27:00.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T08:54:06.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\AppData\\Local\\Temp\\.vsdbgsrc\\d60fbd076558f7f759c9bf5e4237b6a4301b77fac165a475d6fe6975c99f5d83\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d60fbd076558f7f759c9bf5e4237b6a4301b77fac165a475d6fe6975c99f5d83\\Program.cs",
+              "ToolTip": "C:\\Users\\Razil\\AppData\\Local\\Temp\\.vsdbgsrc\\d60fbd076558f7f759c9bf5e4237b6a4301b77fac165a475d6fe6975c99f5d83\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d60fbd076558f7f759c9bf5e4237b6a4301b77fac165a475d6fe6975c99f5d83\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T06:20:54.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Role.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:10.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Services.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Services.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Services.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Services.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Services.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:16.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PhysicalFileProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
+              "ToolTip": "C:\\Users\\Razil\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs [Read Only]",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAqwGcAAAArAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T06:21:10.721Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Team.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:22.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Testimonial.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Testimonial.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Testimonial.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Testimonial.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Testimonial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:29.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\User.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:34.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\UserRole.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:39.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Products.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Products.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:28:05.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Home.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Home.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Home.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Home.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:27:59.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Blog.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Models\\Blog.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Models\\Blog.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Models\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:27:51.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Services\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Services\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:16:24.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\ServicesController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:16:15.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:15:26.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:15:18.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Checkout\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:14:30.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:05:25.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TestimonialController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\TestimonialController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\TestimonialController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\TestimonialController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\TestimonialController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:47:58.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:10:39.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:17:11.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAowIEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:17:23.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Testimonial\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Testimonial\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Testimonial\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Testimonial\\Index.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:48:07.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:45:12.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Team\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Team\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Team\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Team\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:45:20.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ThankYouController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ThankYouController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\ThankYouController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\ThankYouController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\ThankYouController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:18:19.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\ThankYou\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\ThankYou\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\ThankYou\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\ThankYou\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:18:27.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:14:20.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:13:07.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\CartController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:12:58.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:12:07.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:11:59.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:10:30.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:09:08.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:09:06.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T17:08:18.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FurnitureShopProjectRazil\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FurnitureShopProjectRazil\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:08:08.74Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

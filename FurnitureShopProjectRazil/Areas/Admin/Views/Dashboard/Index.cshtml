@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <!-- Card: Total Users -->
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Total Users</h4>
+                        <p class="card-text">1,245</p>
+                        <i class="mdi mdi-account-multiple icon-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Card: Active Courses -->
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Active Courses</h4>
+                        <p class="card-text">38</p>
+                        <i class="mdi mdi-book-open-variant icon-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Card: Feedbacks -->
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-warning text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Feedbacks</h4>
+                        <p class="card-text">145</p>
+                        <i class="mdi mdi-message-text-outline icon-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Card: Partners -->
+            <div class="col-md-3 grid-margin stretch-card">
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Partners</h4>
+                        <p class="card-text">12</p>
+                        <i class="mdi mdi-handshake icon-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart Row -->
+        <div class="row">
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">User Activity</h4>
+                        <canvas id="userActivityChart" style="height:250px;"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Sample -->
+            <div class="col-lg-4 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Recent Registrations</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aylin M.</td>
+                                    <td>2025-05-02</td>
+                                </tr>
+                                <tr>
+                                    <td>Elvin S.</td>
+                                    <td>2025-05-01</td>
+                                </tr>
+                                <tr>
+                                    <td>Kamran Z.</td>
+                                    <td>2025-04-30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* @section Scripts {
+        <script>
+            var ctx = document.getElementById('userActivityChart').getContext('2d');
+            var userActivityChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'User Logins',
+                        data: [12, 19, 3, 5, 2, 3, 9],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+} *@

@@ -1,0 +1,130 @@
+﻿@model List<FurnitureShopProjectRazil.Models.About>
+@{
+    int count = 1;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Haqqımızda</h4>
+
+            <a asp-controller="About" asp-action="Create" class="btn btn-info mb-3">Əlavə edin</a>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Sıra</th>
+                            <th>Başlıq</th>
+                            <th>Alt Başlıq</th>
+                            <th>Şəkil</th>
+                            <th>İkon 1</th>
+                            <th>Başlıq 1</th>
+                            <th>Alt Başlıq 1</th>
+                            <th>İkon 2</th>
+                            <th>Başlıq 2</th>
+                            <th>Alt Başlıq 2</th>
+                            <th>İkon 3</th>
+                            <th>Başlıq 3</th>
+                            <th>Alt Başlıq 3</th>
+                            <th>İkon 4</th>
+                            <th>Başlıq 4</th>
+                            <th>Alt Başlıq 4</th>
+                            <th>Ayarlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@(count++)</td>
+                                <td>@item.Title</td>
+                                <td>@item.Subtitle</td>
+                                <td class="py-1">
+                                    <img src="@item.ImagePath" alt="image" class="hover-image" onclick="openModal('@item.ImagePath')" width="150" />
+                                </td>
+                                <td>@item.Icon1</td>
+                                <td>@item.Title1</td>
+                                <td>@item.Subtitle1</td>
+                                <td>@item.Icon2</td>
+                                <td>@item.Title2</td>
+                                <td>@item.Subtitle2</td>
+                                <td>@item.Icon3</td>
+                                <td>@item.Title3</td>
+                                <td>@item.Subtitle3</td>
+                                <td>@item.Icon4</td>
+                                <td>@item.Title4</td>
+                                <td>@item.Subtitle4</td>
+                                <td>
+                                    <a asp-controller="About" asp-action="Update" asp-route-id="@item.Id" class="btn btn-warning"><i class="mdi mdi-grease-pencil"></i></a>
+                                    <a asp-controller="About" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="mdi mdi-delete"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for image preview -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+
+<script>
+    function openModal(imagePath) {
+        var modal = document.getElementById("imageModal");
+        var modalImage = document.getElementById("modalImage");
+        var caption = document.getElementById("caption");
+
+        modal.style.display = "block";
+        modalImage.src = imagePath;
+        caption.innerHTML = imagePath.split('/').pop();
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
+</script>
