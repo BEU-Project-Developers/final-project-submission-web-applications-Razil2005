@@ -5572,11 +5572,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
+      "projectUniqueName": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
       "projectName": "FurnitureShopProjectRazil",
-      "projectPath": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
+      "projectPath": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
       "packagesPath": "C:\\Users\\Razil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\obj\\",
+      "outputPath": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

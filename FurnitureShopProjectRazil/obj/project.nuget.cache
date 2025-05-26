@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EPWdi+J4Vbc=",
+  "dgSpecHash": "3fHfT1o3UPw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razil\\source\\repos\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
+  "projectFilePath": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razil\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Razil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
