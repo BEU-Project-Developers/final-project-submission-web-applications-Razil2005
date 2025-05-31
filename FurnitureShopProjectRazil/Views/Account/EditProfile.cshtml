@@ -1,0 +1,87 @@
+﻿@model EditProfileViewModel
+@{
+    ViewData["Title"] = "Profili Redaktə Et";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4">@ViewData["Title"]</h2>
+                    <p class="text-center text-muted mb-4">Şəxsi məlumatlarınızı yeniləyin</p>
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form asp-controller="Account" asp-action="EditProfile" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                        <input type="hidden" asp-for="UserId" />
+                        @* CurrentImagePath-i gizli ötürməyə ehtiyac yoxdur, çünki serverdə yenidən yüklənir *@
+                        @* <input type="hidden" asp-for="CurrentImagePath" /> *@
+
+
+                        <div class="row">
+                            <div class="col-md-3 text-center mb-3 mb-md-0">
+                                @if (!string.IsNullOrEmpty(Model.CurrentImagePath))
+                                {
+                                    <img src="~/@Model.CurrentImagePath" alt="Profil Şəkli" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover;" />
+                                }
+                                else
+                                {
+                                    <img src="~/images/default-avatar.png" alt="Default Profil Şəkli" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover;" />
+                                }
+                            </div>
+                            <div class="col-md-9">
+                                <div class="mb-3">
+                                    <label asp-for="Fullname" class="form-label"></label>
+                                    <input asp-for="Fullname" class="form-control">
+                                    <span asp-validation-for="Fullname" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Username" class="form-label"></label>
+                                    <input asp-for="Username" class="form-control">
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 mt-3">
+                            <label asp-for="Photo" class="form-label">Yeni Profil Şəkli (Dəyişmək istəyirsinizsə seçin)</label>
+                            <input asp-for="Photo" class="form-control" type="file">
+                            <span asp-validation-for="Photo" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Yadda Saxla</button>
+                        </div>
+                    </form>
+                    @*
+                    <hr class="my-4"/>
+                    <div class="text-center">
+                        <a asp-controller="Account" asp-action="ChangePassword" class="btn btn-outline-secondary">Parolu Dəyiş</a>
+                    </div>
+                    *@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj": {}
+    "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj": {
+    "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
+        "projectUniqueName": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
         "projectName": "FurnitureShopProjectRazil",
-        "projectPath": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
-        "packagesPath": "C:\\Users\\Razil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Razil\\Source\\Repos\\final-project-submission-web-applications-Razil2005\\FurnitureShopProjectRazil\\obj\\",
+        "projectPath": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil.csproj",
+        "packagesPath": "C:\\Users\\Baku\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Razil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Baku\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,15 +45,37 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.12.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.12.0, )"
             }
           },
           "imports": [
@@ -74,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

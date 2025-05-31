@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FurnitureShopProjectRazil")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca6a72074ad11bdb17c047d3884f19441fa8a44d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FurnitureShopProjectRazil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FurnitureShopProjectRazil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

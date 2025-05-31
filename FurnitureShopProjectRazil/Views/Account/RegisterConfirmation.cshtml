@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Qeydiyyat Təsdiqi";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h2 class="card-title mb-3">@ViewData["Title"]</h2>
+                    <p class="lead">Qeydiyyatınız üçün təşəkkür edirik!</p>
+                    <p>
+                        Hesabınızı aktivləşdirmək üçün <strong>@ViewBag.Email</strong> ünvanına göndərilən təsdiq linkinə klikləyin.
+                    </p>
+                    <p class="text-muted">
+                        Əgər e-poçtu bir neçə dəqiqə ərzində görməsəniz, zəhmət olmasa "spam" və ya "lazımsız" qovluqlarınızı yoxlayın.
+                    </p>
+                    <hr />
+                    <p>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary mt-3">Ana Səhifəyə Qayıt</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Daxil Ol";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4">@ViewData["Title"]</h2>
+                    <p class="text-center text-muted mb-4">Hesabınıza daxil olun</p>
+
+                    <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="UsernameOrEmail" class="form-label"></label>
+                            <input asp-for="UsernameOrEmail" class="form-control" placeholder="İstifadəçi adı və ya E-poçt">
+                            <span asp-validation-for="UsernameOrEmail" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" class="form-control" placeholder="Parolunuz">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input asp-for="RememberMe" class="form-check-input">
+                                    <label asp-for="RememberMe" class="form-check-label"></label>
+                                </div>
+                            </div>
+                            <div class="col text-end">
+                                <a asp-controller="Account" asp-action="ForgotPassword">Parolumu unutdum?</a>
+                            </div>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Daxil Ol</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Hesabınız yoxdur? <a asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Yeni hesab yaradın</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

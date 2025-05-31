@@ -1,0 +1,42 @@
+﻿@model EnterResetCodeViewModel
+@{
+    ViewData["Title"] = "Təsdiq Kodunu Daxil Edin";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4">@ViewData["Title"]</h2>
+                    <p class="text-center text-muted mb-4"><strong>@Model.Email</strong> ünvanına göndərilən təsdiq kodunu daxil edin.</p>
+
+                    <form asp-controller="Account" asp-action="EnterResetCode" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                        <input type="hidden" asp-for="Email" />
+
+                        <div class="mb-3">
+                            <label asp-for="Code" class="form-label"></label>
+                            <input asp-for="Code" class="form-control" placeholder="6 Rəqəmli Kod" maxlength="6" autofocus>
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Davam Et</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p><a asp-controller="Account" asp-action="ForgotPassword" asp-route-email="@Model.Email">Kodu yenidən göndər</a></p>
+                        <p><a asp-controller="Account" asp-action="Login">Daxil Olma Səhifəsinə Qayıt</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

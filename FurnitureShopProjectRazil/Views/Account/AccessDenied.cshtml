@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Giriş Qadağandır";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm border-danger">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-shield-lock-fill text-danger" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0c-.087 0-.17.008-.25.025l-5.5 1.375a1 1 0 0 0-.75.975V5.45A5 5 0 0 0 5.25 10.42L8 12.45l2.75-2.03a5 5 0 0 0 3.5-4.97V2.375a1 1 0 0 0-.75-.975L8.25.025A1.5 1.5 0 0 0 8 0m2.5 7.042c0 .49-.392.865-.885.956a.5.5 0 0 1-.115.008H8V7.646a.5.5 0 0 1 .115-.324l.5-.5a.5.5 0 0 1 .707.707l-.225.225H10.5a.5.5 0 0 1 .5.5M10.5 5H8.5V4a.5.5 0 0 1 .5-.5H10a.5.5 0 0 1 .5.5z" />
+                            <path d="M4 11.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title text-danger mb-3">@ViewData["Title"]</h2>
+                    <p class="lead text-danger">Bu səhifəyə və ya resursa daxil olmaq üçün icazəniz yoxdur.</p>
+                    <p class="mt-4">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Ana Səhifəyə Qayıt</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
