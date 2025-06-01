@@ -1,0 +1,62 @@
+﻿@model FurnitureShopProjectRazil.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Admin Qeydiyyatı";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLoginLayout.cshtml"; // Xüsusi admin login layoutu
+}
+
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg">
+                <div class="card-header text-center bg-success text-white">
+                    <h4>@ViewData["Title"]</h4>
+                </div>
+                <div class="card-body p-4">
+                    <p class="text-muted text-center small">Bu səhifə yalnız yeni administratorların qeydiyyatı üçündür. Qeydiyyatdan sonra hesabınızın aktivləşdirilməsi tələb oluna bilər.</p>
+                    <hr />
+                    <form asp-area="Admin" asp-controller="Account" asp-action="Register" method="post">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Username" class="form-label"></label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="FullName" class="form-label"></label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email" type="email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ConfirmPassword" class="form-label"></label>
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Qeydiyyatdan Keç</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a asp-area="Admin" asp-controller="Account" asp-action="Login">Artıq hesabınız var? Daxil Olun</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

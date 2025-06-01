@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FurnitureShopProjectRazil.Models
 {
@@ -12,5 +13,9 @@ namespace FurnitureShopProjectRazil.Models
         [Required]
         [MaxLength(100)]
         public string Subtitle { get; set; }
+
+        public string ImagePath { get; set; }
+        [NotMapped]
+        public IFormFile Photo { get; set; }
     }
 }

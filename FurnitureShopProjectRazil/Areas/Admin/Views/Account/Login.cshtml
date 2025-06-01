@@ -1,0 +1,63 @@
+﻿@model FurnitureShopProjectRazil.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Admin Panel Login";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLoginLayout.cshtml"; 
+}
+
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+                <div class="card-header text-center bg-primary text-white">
+                    <h4>@ViewData["Title"]</h4>
+                </div>
+                <div class="card-body p-4">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+                    }
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+                    }
+                    <form asp-area="Admin" asp-controller="Account" asp-action="Login" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="UsernameOrEmail" class="form-label"></label>
+                            <input asp-for="UsernameOrEmail" class="form-control" placeholder="İstifadəçi adı və ya E-poçt" />
+                            <span asp-validation-for="UsernameOrEmail" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Şifrə" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input asp-for="RememberMe" class="form-check-input" />
+                            <label asp-for="RememberMe" class="form-check-label"></label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Daxil Ol</button>
+                        </div>
+                        @* Admin panelində "Forgot Password" və "Register" linkləri adətən olmur,
+                            amma ehtiyacınıza görə əlavə edə bilərsiniz.
+                        <div class="text-center mt-3">
+                            <a asp-area="Admin" asp-controller="Account" asp-action="ForgotPassword">Şifrəni unutmusunuz?</a>
+                            <br/>
+                            <a asp-area="Admin" asp-controller="Account" asp-action="Register">Yeni Admin Hesabı Yarat</a>
+                        </div>
+                        *@
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

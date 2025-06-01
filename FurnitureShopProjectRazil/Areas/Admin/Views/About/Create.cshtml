@@ -1,0 +1,117 @@
+﻿@model FurnitureShopProjectRazil.Models.About
+@{
+    ViewData["Title"] = "Yeni Haqqımızda Məlumatı";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+                @* Genişliyi artırdım *@
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">@ViewData["Title"]</h4>
+                        <form class="forms-sample" asp-action="Create" method="post" enctype="multipart/form-data">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                            <div class="form-group">
+                                <label asp-for="Photo">Əsas Şəkil</label>
+                                <input asp-for="Photo" type="file" class="form-control" />
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title">Əsas Başlıq</label>
+                                <input asp-for="Title" class="form-control" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Subtitle">Əsas Altbaşlıq</label>
+                                <input asp-for="Subtitle" class="form-control" />
+                                <span asp-validation-for="Subtitle" class="text-danger"></span>
+                            </div>
+
+                            <hr />
+                            <h5>Xüsusiyyət 1</h5>
+                            <div class="form-group">
+                                <label asp-for="Icon1">İkon 1 (Məs: "fas fa-truck" və ya şəkil yolu)</label>
+                                <input asp-for="Icon1" class="form-control" />
+                                <span asp-validation-for="Icon1" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title1">Başlıq 1</label>
+                                <input asp-for="Title1" class="form-control" />
+                                <span asp-validation-for="Title1" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Subtitle1">Altbaşlıq 1</label>
+                                <input asp-for="Subtitle1" class="form-control" />
+                                <span asp-validation-for="Subtitle1" class="text-danger"></span>
+                            </div>
+
+                            <hr />
+                            <h5>Xüsusiyyət 2</h5>
+                            <div class="form-group">
+                                <label asp-for="Icon2">İkon 2</label>
+                                <input asp-for="Icon2" class="form-control" />
+                                <span asp-validation-for="Icon2" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title2">Başlıq 2</label>
+                                <input asp-for="Title2" class="form-control" />
+                                <span asp-validation-for="Title2" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Subtitle2">Altbaşlıq 2</label>
+                                <input asp-for="Subtitle2" class="form-control" />
+                                <span asp-validation-for="Subtitle2" class="text-danger"></span>
+                            </div>
+
+                            <hr />
+                            <h5>Xüsusiyyət 3</h5>
+                            <div class="form-group">
+                                <label asp-for="Icon3">İkon 3</label>
+                                <input asp-for="Icon3" class="form-control" />
+                                <span asp-validation-for="Icon3" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title3">Başlıq 3</label>
+                                <input asp-for="Title3" class="form-control" />
+                                <span asp-validation-for="Title3" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Subtitle3">Altbaşlıq 3</label>
+                                <input asp-for="Subtitle3" class="form-control" />
+                                <span asp-validation-for="Subtitle3" class="text-danger"></span>
+                            </div>
+
+                            <hr />
+                            <h5>Xüsusiyyət 4</h5>
+                            <div class="form-group">
+                                <label asp-for="Icon4">İkon 4</label>
+                                <input asp-for="Icon4" class="form-control" />
+                                <span asp-validation-for="Icon4" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title4">Başlıq 4</label>
+                                <input asp-for="Title4" class="form-control" />
+                                <span asp-validation-for="Title4" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Subtitle4">Altbaşlıq 4</label>
+                                <input asp-for="Subtitle4" class="form-control" />
+                                <span asp-validation-for="Subtitle4" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Yadda saxla</button>
+                            <a asp-action="Index" class="btn btn-light">Ləğv et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

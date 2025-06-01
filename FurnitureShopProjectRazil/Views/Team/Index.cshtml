@@ -1,72 +1,75 @@
-﻿<!-- Start Team Section -->
+﻿@model IEnumerable<FurnitureShopProjectRazil.Models.Team>
+
+@{
+    ViewData["Title"] = "Komandamız";
+}
+
+<!-- Start Team Section -->
 <div class="untree_co-section">
-	<div class="container">
+    <div class="container">
 
-		<div class="row mb-5">
-			<div class="col-lg-5 mx-auto text-center">
-				<h2 class="section-title">Our Team</h2>
-			</div>
-		</div>
+        <div class="row mb-5">
+            <div class="col-lg-5 mx-auto text-center">
+                <h2 class="section-title">@ViewData["Title"]</h2>
+            </div>
+        </div>
 
-		<div class="row">
+        <div class="row">
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var member in Model)
+                {
+                    <!-- Start Column -->
+                    <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                        @if (!string.IsNullOrEmpty(member.ImagePath))
+                        {
+                            <img src="@Url.Content(member.ImagePath)" class="img-fluid mb-5" alt="@member.Fullname">
+                        }
+                        else
+                        {
+                            @* Standart şəkil yolu, məsələn wwwroot/images/default_person.png *@
+                            <img src="@Url.Content("~/images/default_person.png")" class="img-fluid mb-5" alt="Şəkil yoxdur">
+                        }
 
-			<!-- Start Column 1 -->
-			<div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-				<img src="images/person_1.jpg" class="img-fluid mb-5">
-				<h3 clas><a href="#"><span class="">Lawson</span> Arnold</a></h3>
-				<span class="d-block position mb-4">CEO, Founder, Atty.</span>
-				<p>
-					Separated they live in.
-					Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-				</p>
-				<p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
-			</div>
-			<!-- End Column 1 -->
-			<!-- Start Column 2 -->
-			<div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-				<img src="images/person_2.jpg" class="img-fluid mb-5">
+                        <h3><a href="#">@member.Fullname</a></h3> @* Orijinal HTML-də "clas" yazılmışdı, "class" olmalıydı amma <a> içində olduğu üçün lazım deyil *@
 
-				<h3 clas><a href="#"><span class="">Jeremy</span> Walker</a></h3>
-				<span class="d-block position mb-4">CEO, Founder, Atty.</span>
-				<p>
-					Separated they live in.
-					Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-				</p>
-				<p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
+                        @if (member.Profession != null && !string.IsNullOrEmpty(member.Profession.Name))
+                        {
+                            <span class="d-block position mb-4">@member.Profession.Name</span>
+                        }
+                        else
+                        {
+                            <span class="d-block position mb-4">Peşə təyin edilməyib</span>
+                        }
 
-			</div>
-			<!-- End Column 2 -->
-			<!-- Start Column 3 -->
-			<div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-				<img src="images/person_3.jpg" class="img-fluid mb-5">
-				<h3 clas><a href="#"><span class="">Patrik</span> White</a></h3>
-				<span class="d-block position mb-4">CEO, Founder, Atty.</span>
-				<p>
-					Separated they live in.
-					Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-				</p>
-				<p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
-			</div>
-			<!-- End Column 3 -->
-			<!-- Start Column 4 -->
-			<div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-				<img src="images/person_4.jpg" class="img-fluid mb-5">
+                        @if (!string.IsNullOrEmpty(member.Biography))
+                        {
+                            <p>
+                                @* Bioqrafiyanı qısaltmaq olar, məsələn: *@
+                                @(member.Biography.Length > 100 ? member.Biography.Substring(0, 100) + "..." : member.Biography)
+                            </p>
+                        }
+                        else
+                        {
+                            <p>Bioqrafiya daxil edilməyib.</p>
+                        }
 
-				<h3 clas><a href="#"><span class="">Kathryn</span> Ryan</a></h3>
-				<span class="d-block position mb-4">CEO, Founder, Atty.</span>
-				<p>
-					Separated they live in.
-					Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-				</p>
-				<p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
-
-
-			</div>
-			<!-- End Column 4 -->
-
-
-
-		</div>
-	</div>
+                        @* "Learn More" hissəsi çıxarıldı *@
+                        @* 
+                        Original:
+                        <p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
+                        *@
+                    </div>
+                    <!-- End Column -->
+                }
+            }
+            else
+            {
+                <div class="col-12 text-center">
+                    <p>Hazırda komanda üzvü mövcud deyil.</p>
+                </div>
+            }
+        </div>
+    </div>
 </div>
 <!-- End Team Section -->

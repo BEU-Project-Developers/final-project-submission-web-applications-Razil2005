@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nPsgxH9YEIqpPbz4EtTwRNwBEqv0jc8amVOQx0Hl/gI=",
+  "Hash": "p4C2UfOAHsWddCYIMUsrlJWmgTXlBTD+DEdd8eWvsPQ=",
   "Source": "FurnitureShopProjectRazil",
   "BasePath": "_content/FurnitureShopProjectRazil",
   "Mode": "Default",
@@ -57,27 +57,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FurnitureShopProjectRazil.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\admin.zip",
-      "SourceId": "FurnitureShopProjectRazil",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
-      "BasePath": "_content/FurnitureShopProjectRazil",
-      "RelativePath": "admin#[.{fingerprint}]?.zip",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gl4cvhckfw",
-      "Integrity": "vDrXywW4FODHpiSfoPsXjZeNzRty2JBdQtZ3ADbvkp4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\admin.zip"
     },
     {
       "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\admin\\assets\\0881880c-c52c-4977-a3d8-96fe2c16484d.png",
@@ -2178,91 +2157,786 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "83c65x61dc",
+      "Integrity": "TJSWmzXOKM63MDDOlHw2AhtDUv366vVmloOPg+XkfaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\style.css",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8jl6kane49",
+      "Integrity": "hJ6p4MUNoVxHRwNCtSaecZFwdsUsn9Obk03UVPEwl0g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\tiny-slider.css",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/css/tiny-slider#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rygvbujoae",
+      "Integrity": "o7pVwmkKiQkgQkARNdfkxVVrpXTpuc9y4cUmMstU9oM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\tiny-slider.css"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\bag.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/bag#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "el7is6keb4",
+      "Integrity": "DtWl7goR2p7f3f+Qu1j1Y8pkp/XtKplhkT5uO1tCwWA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\bag.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\cart.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/cart#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfd439r205",
+      "Integrity": "8QuJsAlXwweZL9xRc3WLtBTq7m7O3Tts2llH6KzqQ4o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\cart.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\couch.png",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/couch#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5i3fgkvkcw",
+      "Integrity": "g3AaVWnUO1CeK/HCHuefwHHqflj+PzV2HNkmJu6TDDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\couch.png"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\cross.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/cross#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oyhyn44prl",
+      "Integrity": "kOnfwLbs8AbtkrzoHxq/L85TlMrF7hVX3J+GGP6WjQU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\cross.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-green.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/dots-green#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "drvvkcgrm9",
+      "Integrity": "d0kNclgX4weDKq6QlPHzKb/8VP9gdUTaMot5GM73+nk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\dots-green.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-light.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/dots-light#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "45jvgezuhq",
+      "Integrity": "qCpZ7RVB99g1yDRfqibJp4SrVVy8+xnEsCY1KsFzXLg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\dots-light.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-yellow.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/dots-yellow#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ho4tp9qtij",
+      "Integrity": "8RmI3TSmJLxWIvx6kBU8+/ixSWQInxpMnFZYGd5CJds=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\dots-yellow.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\envelope-outline.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/envelope-outline#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "asi76yss5b",
+      "Integrity": "JldRt8d93UzHj2YlYlK+PJWRPmjdj1j4r4hJWXn+1QM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\envelope-outline.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-1.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/img-grid-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u8cv3ws1ml",
+      "Integrity": "Qk0qhPGbadKYY1YfP4fs14Oc58IyoM9F9bLTUychfzk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\img-grid-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-2.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/img-grid-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "no98go322r",
+      "Integrity": "+fwIN9KHdYGMEl8jE607POKPuJWQUyinAzT99Tu9Eqo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\img-grid-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-3.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/img-grid-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9uxq9np27j",
+      "Integrity": "0aKmJTWt1x089zo+/tjtzc0CKnV+IYHX5vPRPksN4gU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\img-grid-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_1.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/person_1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g7cvfk36at",
+      "Integrity": "jD487USHSbs1fllp0VbZapEnGAHLQVb4F+nqCLla6L8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\person_1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_2.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/person_2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3eigcib8pc",
+      "Integrity": "G4Vv/Mgd1UpWfcmlV3bHXBaTafbHrl76FpNidHCKCTI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\person_2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_3.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/person_3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4z84j813rv",
+      "Integrity": "kBZw1RDplbTpd11xjfVXxqGnU60/+pn4KYVTWrrGjLQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\person_3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_4.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/person_4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gv6zsj8klk",
+      "Integrity": "dKr0vVI+osGNrNZHjU1/UiSniTrrcxq8pxv9VEInMVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\person_4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person-1.png",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/person-1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i2ycx0u6cy",
+      "Integrity": "hqeLTOMrwNyiorROStwYEOIYtYudKEwR+w4F0nnmpW8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\person-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-1.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/post-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zs1221llb3",
+      "Integrity": "o+u9RNEvlRg6ivnlu9S/TCnlcPGUjyu1bonG2mC6/Js=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\post-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-2.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/post-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ovnh95jqvx",
+      "Integrity": "3N+DG8Kb/Y7heq40N4VE35G+Kw7XFhdBNGqeZbbdozg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\post-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-3.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/post-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u64hrf3unr",
+      "Integrity": "dnY743XdKnlUoxvuqdtCC5UeeEM3x8TA4yJTj0zGFN0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\post-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-1.png",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/product-1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eju5sh650i",
+      "Integrity": "2klQBYCqj3kwng3rYWE38yzZrkiyEfWkS2RrN65sXXk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-2.png",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/product-2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3r2qshzv7o",
+      "Integrity": "kf9KPQ1GR/2OP0NupYtW7SzC+BokkkCTUmvgkK+bRvw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product-2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-3.png",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/product-3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ivkh6bcc18",
+      "Integrity": "EuoDOUDOF7//7FgK2mEDFtcxUkmmU8+4huycB5stySE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\return.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/return#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8uklm24gyk",
+      "Integrity": "wLo69SsbmrUgfiPmYTMnyVWt81rEmOAIE6p3ZAkzpQ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\return.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\sofa.png",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/sofa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yxewri6519",
+      "Integrity": "pjYRlmxHFj8KKvvcUPPiZSRBSYaC25PE5eGnyOgFgrI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\sofa.png"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\support.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/support#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rs69qbitla",
+      "Integrity": "q1Bv3lGR2MgcHomTdiidKW5GvfwZDWtG8NDAF2d080A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\support.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\truck.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/truck#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zcpgtm479z",
+      "Integrity": "nca9rqNJ+BnaOEB0vEoCsDFFmCVwqBJcc5CqYy1Nrm0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\truck.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\user.svg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/user#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3sd8b9g9hl",
+      "Integrity": "PRkKTcqsf+yQmgPlAhOeCX/ri0i7MXOnvVp2hav2uD0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\user.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\why-choose-us-img.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/images/why-choose-us-img#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da0xfq9qmh",
+      "Integrity": "taagw0mpsqAqxET+ZewiIGBA2BLEPvLyOucTXuuAl1M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\why-choose-us-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mfa5u92in3",
+      "Integrity": "EgZm4B1nHbFyzs2Hqq7Vyw/rLaJNlxwpH+G44PZLGKw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\custom.js",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/js/custom#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g6dt3mzyyf",
+      "Integrity": "+JKt4BjA34ksw1W9iJG4EOqsKGfiWFri6PKSOUu3al0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\tiny-slider.js",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "assets/js/tiny-slider#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "42fqjfj2it",
+      "Integrity": "RPLVlpvNDUrRo/QVwnhrFTb3MP9i3c18Hp20qbpYsqY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\tiny-slider.js"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\5408c711-24e8-49f7-91df-e6b178111de6.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "images/profiles/5408c711-24e8-49f7-91df-e6b178111de6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ks4rxv3ilp",
+      "Integrity": "BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\profiles\\5408c711-24e8-49f7-91df-e6b178111de6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\a7299212-5de3-4c67-9465-08fe703fdb36.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "images/profiles/a7299212-5de3-4c67-9465-08fe703fdb36#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ks4rxv3ilp",
+      "Integrity": "BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\profiles\\a7299212-5de3-4c67-9465-08fe703fdb36.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\e8649aba-8f4c-4958-b196-b7f395e06156.jpg",
+      "SourceId": "FurnitureShopProjectRazil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\",
+      "BasePath": "_content/FurnitureShopProjectRazil",
+      "RelativePath": "images/profiles/e8649aba-8f4c-4958-b196-b7f395e06156#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s9k8q9dylq",
+      "Integrity": "YHn6cbX/LCrpcTKs25LEK6MhnR4tEcfp6YpXw0kxB3A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\profiles\\e8649aba-8f4c-4958-b196-b7f395e06156.jpg"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "admin.gl4cvhckfw.zip",
-      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\admin.zip",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20341909"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/x-zip-compressed"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vDrXywW4FODHpiSfoPsXjZeNzRty2JBdQtZ3ADbvkp4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 20:38:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gl4cvhckfw"
-        },
-        {
-          "Name": "label",
-          "Value": "admin.zip"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vDrXywW4FODHpiSfoPsXjZeNzRty2JBdQtZ3ADbvkp4="
-        }
-      ]
-    },
-    {
-      "Route": "admin.zip",
-      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\admin.zip",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20341909"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/x-zip-compressed"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vDrXywW4FODHpiSfoPsXjZeNzRty2JBdQtZ3ADbvkp4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 20:38:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vDrXywW4FODHpiSfoPsXjZeNzRty2JBdQtZ3ADbvkp4="
-        }
-      ]
-    },
     {
       "Route": "admin/assets/0881880c-c52c-4977-a3d8-96fe2c16484d.g4263wttv3.png",
       "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\admin\\assets\\0881880c-c52c-4977-a3d8-96fe2c16484d.png",
@@ -10464,6 +11138,2794 @@
       ]
     },
     {
+      "Route": "assets/css/bootstrap.min.83c65x61dc.css",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJSWmzXOKM63MDDOlHw2AhtDUv366vVmloOPg+XkfaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "83c65x61dc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TJSWmzXOKM63MDDOlHw2AhtDUv366vVmloOPg+XkfaU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJSWmzXOKM63MDDOlHw2AhtDUv366vVmloOPg+XkfaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TJSWmzXOKM63MDDOlHw2AhtDUv366vVmloOPg+XkfaU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/style.8jl6kane49.css",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hJ6p4MUNoVxHRwNCtSaecZFwdsUsn9Obk03UVPEwl0g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8jl6kane49"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hJ6p4MUNoVxHRwNCtSaecZFwdsUsn9Obk03UVPEwl0g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/style.css",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hJ6p4MUNoVxHRwNCtSaecZFwdsUsn9Obk03UVPEwl0g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hJ6p4MUNoVxHRwNCtSaecZFwdsUsn9Obk03UVPEwl0g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/tiny-slider.css",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\tiny-slider.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o7pVwmkKiQkgQkARNdfkxVVrpXTpuc9y4cUmMstU9oM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o7pVwmkKiQkgQkARNdfkxVVrpXTpuc9y4cUmMstU9oM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/tiny-slider.rygvbujoae.css",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\css\\tiny-slider.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o7pVwmkKiQkgQkARNdfkxVVrpXTpuc9y4cUmMstU9oM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rygvbujoae"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/tiny-slider.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o7pVwmkKiQkgQkARNdfkxVVrpXTpuc9y4cUmMstU9oM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/bag.el7is6keb4.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\bag.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DtWl7goR2p7f3f+Qu1j1Y8pkp/XtKplhkT5uO1tCwWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "el7is6keb4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/bag.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DtWl7goR2p7f3f+Qu1j1Y8pkp/XtKplhkT5uO1tCwWA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/bag.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\bag.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DtWl7goR2p7f3f+Qu1j1Y8pkp/XtKplhkT5uO1tCwWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DtWl7goR2p7f3f+Qu1j1Y8pkp/XtKplhkT5uO1tCwWA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/cart.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\cart.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8QuJsAlXwweZL9xRc3WLtBTq7m7O3Tts2llH6KzqQ4o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8QuJsAlXwweZL9xRc3WLtBTq7m7O3Tts2llH6KzqQ4o="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/cart.zfd439r205.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\cart.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8QuJsAlXwweZL9xRc3WLtBTq7m7O3Tts2llH6KzqQ4o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfd439r205"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/cart.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8QuJsAlXwweZL9xRc3WLtBTq7m7O3Tts2llH6KzqQ4o="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/couch.5i3fgkvkcw.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\couch.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "341001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g3AaVWnUO1CeK/HCHuefwHHqflj+PzV2HNkmJu6TDDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5i3fgkvkcw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/couch.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g3AaVWnUO1CeK/HCHuefwHHqflj+PzV2HNkmJu6TDDY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/couch.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\couch.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "341001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g3AaVWnUO1CeK/HCHuefwHHqflj+PzV2HNkmJu6TDDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g3AaVWnUO1CeK/HCHuefwHHqflj+PzV2HNkmJu6TDDY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/cross.oyhyn44prl.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\cross.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kOnfwLbs8AbtkrzoHxq/L85TlMrF7hVX3J+GGP6WjQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oyhyn44prl"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/cross.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kOnfwLbs8AbtkrzoHxq/L85TlMrF7hVX3J+GGP6WjQU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/cross.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\cross.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kOnfwLbs8AbtkrzoHxq/L85TlMrF7hVX3J+GGP6WjQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kOnfwLbs8AbtkrzoHxq/L85TlMrF7hVX3J+GGP6WjQU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/dots-green.drvvkcgrm9.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-green.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d0kNclgX4weDKq6QlPHzKb/8VP9gdUTaMot5GM73+nk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "drvvkcgrm9"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/dots-green.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d0kNclgX4weDKq6QlPHzKb/8VP9gdUTaMot5GM73+nk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/dots-green.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-green.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d0kNclgX4weDKq6QlPHzKb/8VP9gdUTaMot5GM73+nk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d0kNclgX4weDKq6QlPHzKb/8VP9gdUTaMot5GM73+nk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/dots-light.45jvgezuhq.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-light.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qCpZ7RVB99g1yDRfqibJp4SrVVy8+xnEsCY1KsFzXLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "45jvgezuhq"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/dots-light.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qCpZ7RVB99g1yDRfqibJp4SrVVy8+xnEsCY1KsFzXLg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/dots-light.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-light.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qCpZ7RVB99g1yDRfqibJp4SrVVy8+xnEsCY1KsFzXLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qCpZ7RVB99g1yDRfqibJp4SrVVy8+xnEsCY1KsFzXLg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/dots-yellow.ho4tp9qtij.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-yellow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8RmI3TSmJLxWIvx6kBU8+/ixSWQInxpMnFZYGd5CJds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ho4tp9qtij"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/dots-yellow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8RmI3TSmJLxWIvx6kBU8+/ixSWQInxpMnFZYGd5CJds="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/dots-yellow.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\dots-yellow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8RmI3TSmJLxWIvx6kBU8+/ixSWQInxpMnFZYGd5CJds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8RmI3TSmJLxWIvx6kBU8+/ixSWQInxpMnFZYGd5CJds="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/envelope-outline.asi76yss5b.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\envelope-outline.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JldRt8d93UzHj2YlYlK+PJWRPmjdj1j4r4hJWXn+1QM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "asi76yss5b"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/envelope-outline.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JldRt8d93UzHj2YlYlK+PJWRPmjdj1j4r4hJWXn+1QM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/envelope-outline.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\envelope-outline.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JldRt8d93UzHj2YlYlK+PJWRPmjdj1j4r4hJWXn+1QM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JldRt8d93UzHj2YlYlK+PJWRPmjdj1j4r4hJWXn+1QM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/img-grid-1.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1061722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qk0qhPGbadKYY1YfP4fs14Oc58IyoM9F9bLTUychfzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qk0qhPGbadKYY1YfP4fs14Oc58IyoM9F9bLTUychfzk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/img-grid-1.u8cv3ws1ml.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1061722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qk0qhPGbadKYY1YfP4fs14Oc58IyoM9F9bLTUychfzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u8cv3ws1ml"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/img-grid-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qk0qhPGbadKYY1YfP4fs14Oc58IyoM9F9bLTUychfzk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/img-grid-2.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194912"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fwIN9KHdYGMEl8jE607POKPuJWQUyinAzT99Tu9Eqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fwIN9KHdYGMEl8jE607POKPuJWQUyinAzT99Tu9Eqo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/img-grid-2.no98go322r.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194912"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fwIN9KHdYGMEl8jE607POKPuJWQUyinAzT99Tu9Eqo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "no98go322r"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/img-grid-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fwIN9KHdYGMEl8jE607POKPuJWQUyinAzT99Tu9Eqo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/img-grid-3.9uxq9np27j.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "223431"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0aKmJTWt1x089zo+/tjtzc0CKnV+IYHX5vPRPksN4gU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9uxq9np27j"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/img-grid-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0aKmJTWt1x089zo+/tjtzc0CKnV+IYHX5vPRPksN4gU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/img-grid-3.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\img-grid-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "223431"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0aKmJTWt1x089zo+/tjtzc0CKnV+IYHX5vPRPksN4gU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0aKmJTWt1x089zo+/tjtzc0CKnV+IYHX5vPRPksN4gU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_1.g7cvfk36at.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jD487USHSbs1fllp0VbZapEnGAHLQVb4F+nqCLla6L8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g7cvfk36at"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/person_1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jD487USHSbs1fllp0VbZapEnGAHLQVb4F+nqCLla6L8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_1.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jD487USHSbs1fllp0VbZapEnGAHLQVb4F+nqCLla6L8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jD487USHSbs1fllp0VbZapEnGAHLQVb4F+nqCLla6L8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_2.3eigcib8pc.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72553"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G4Vv/Mgd1UpWfcmlV3bHXBaTafbHrl76FpNidHCKCTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eigcib8pc"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/person_2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G4Vv/Mgd1UpWfcmlV3bHXBaTafbHrl76FpNidHCKCTI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_2.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72553"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G4Vv/Mgd1UpWfcmlV3bHXBaTafbHrl76FpNidHCKCTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G4Vv/Mgd1UpWfcmlV3bHXBaTafbHrl76FpNidHCKCTI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_3.4z84j813rv.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kBZw1RDplbTpd11xjfVXxqGnU60/+pn4KYVTWrrGjLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4z84j813rv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/person_3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kBZw1RDplbTpd11xjfVXxqGnU60/+pn4KYVTWrrGjLQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_3.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kBZw1RDplbTpd11xjfVXxqGnU60/+pn4KYVTWrrGjLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kBZw1RDplbTpd11xjfVXxqGnU60/+pn4KYVTWrrGjLQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_4.gv6zsj8klk.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dKr0vVI+osGNrNZHjU1/UiSniTrrcxq8pxv9VEInMVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gv6zsj8klk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/person_4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dKr0vVI+osGNrNZHjU1/UiSniTrrcxq8pxv9VEInMVk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person_4.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person_4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dKr0vVI+osGNrNZHjU1/UiSniTrrcxq8pxv9VEInMVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dKr0vVI+osGNrNZHjU1/UiSniTrrcxq8pxv9VEInMVk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person-1.i2ycx0u6cy.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85004"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqeLTOMrwNyiorROStwYEOIYtYudKEwR+w4F0nnmpW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i2ycx0u6cy"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/person-1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqeLTOMrwNyiorROStwYEOIYtYudKEwR+w4F0nnmpW8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/person-1.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\person-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85004"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqeLTOMrwNyiorROStwYEOIYtYudKEwR+w4F0nnmpW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqeLTOMrwNyiorROStwYEOIYtYudKEwR+w4F0nnmpW8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/post-1.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276129"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o+u9RNEvlRg6ivnlu9S/TCnlcPGUjyu1bonG2mC6/Js=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o+u9RNEvlRg6ivnlu9S/TCnlcPGUjyu1bonG2mC6/Js="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/post-1.zs1221llb3.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276129"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o+u9RNEvlRg6ivnlu9S/TCnlcPGUjyu1bonG2mC6/Js=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zs1221llb3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/post-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o+u9RNEvlRg6ivnlu9S/TCnlcPGUjyu1bonG2mC6/Js="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/post-2.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "359539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3N+DG8Kb/Y7heq40N4VE35G+Kw7XFhdBNGqeZbbdozg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3N+DG8Kb/Y7heq40N4VE35G+Kw7XFhdBNGqeZbbdozg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/post-2.ovnh95jqvx.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "359539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3N+DG8Kb/Y7heq40N4VE35G+Kw7XFhdBNGqeZbbdozg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovnh95jqvx"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/post-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3N+DG8Kb/Y7heq40N4VE35G+Kw7XFhdBNGqeZbbdozg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/post-3.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280168"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dnY743XdKnlUoxvuqdtCC5UeeEM3x8TA4yJTj0zGFN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dnY743XdKnlUoxvuqdtCC5UeeEM3x8TA4yJTj0zGFN0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/post-3.u64hrf3unr.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\post-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280168"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dnY743XdKnlUoxvuqdtCC5UeeEM3x8TA4yJTj0zGFN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u64hrf3unr"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/post-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dnY743XdKnlUoxvuqdtCC5UeeEM3x8TA4yJTj0zGFN0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/product-1.eju5sh650i.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2klQBYCqj3kwng3rYWE38yzZrkiyEfWkS2RrN65sXXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eju5sh650i"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/product-1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2klQBYCqj3kwng3rYWE38yzZrkiyEfWkS2RrN65sXXk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/product-1.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2klQBYCqj3kwng3rYWE38yzZrkiyEfWkS2RrN65sXXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2klQBYCqj3kwng3rYWE38yzZrkiyEfWkS2RrN65sXXk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/product-2.3r2qshzv7o.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155825"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kf9KPQ1GR/2OP0NupYtW7SzC+BokkkCTUmvgkK+bRvw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3r2qshzv7o"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/product-2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kf9KPQ1GR/2OP0NupYtW7SzC+BokkkCTUmvgkK+bRvw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/product-2.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155825"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kf9KPQ1GR/2OP0NupYtW7SzC+BokkkCTUmvgkK+bRvw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kf9KPQ1GR/2OP0NupYtW7SzC+BokkkCTUmvgkK+bRvw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/product-3.ivkh6bcc18.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119385"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EuoDOUDOF7//7FgK2mEDFtcxUkmmU8+4huycB5stySE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ivkh6bcc18"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/product-3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EuoDOUDOF7//7FgK2mEDFtcxUkmmU8+4huycB5stySE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/product-3.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\product-3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119385"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EuoDOUDOF7//7FgK2mEDFtcxUkmmU8+4huycB5stySE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EuoDOUDOF7//7FgK2mEDFtcxUkmmU8+4huycB5stySE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/return.8uklm24gyk.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\return.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "806"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wLo69SsbmrUgfiPmYTMnyVWt81rEmOAIE6p3ZAkzpQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8uklm24gyk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/return.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wLo69SsbmrUgfiPmYTMnyVWt81rEmOAIE6p3ZAkzpQ4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/return.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\return.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "806"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wLo69SsbmrUgfiPmYTMnyVWt81rEmOAIE6p3ZAkzpQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wLo69SsbmrUgfiPmYTMnyVWt81rEmOAIE6p3ZAkzpQ4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/sofa.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\sofa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "269622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pjYRlmxHFj8KKvvcUPPiZSRBSYaC25PE5eGnyOgFgrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pjYRlmxHFj8KKvvcUPPiZSRBSYaC25PE5eGnyOgFgrI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/sofa.yxewri6519.png",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\sofa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "269622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pjYRlmxHFj8KKvvcUPPiZSRBSYaC25PE5eGnyOgFgrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yxewri6519"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/sofa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pjYRlmxHFj8KKvvcUPPiZSRBSYaC25PE5eGnyOgFgrI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/support.rs69qbitla.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\support.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1210"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q1Bv3lGR2MgcHomTdiidKW5GvfwZDWtG8NDAF2d080A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rs69qbitla"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/support.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q1Bv3lGR2MgcHomTdiidKW5GvfwZDWtG8NDAF2d080A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/support.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\support.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1210"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q1Bv3lGR2MgcHomTdiidKW5GvfwZDWtG8NDAF2d080A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q1Bv3lGR2MgcHomTdiidKW5GvfwZDWtG8NDAF2d080A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/truck.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\truck.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1008"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nca9rqNJ+BnaOEB0vEoCsDFFmCVwqBJcc5CqYy1Nrm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nca9rqNJ+BnaOEB0vEoCsDFFmCVwqBJcc5CqYy1Nrm0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/truck.zcpgtm479z.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\truck.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1008"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nca9rqNJ+BnaOEB0vEoCsDFFmCVwqBJcc5CqYy1Nrm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zcpgtm479z"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/truck.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nca9rqNJ+BnaOEB0vEoCsDFFmCVwqBJcc5CqYy1Nrm0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/user.3sd8b9g9hl.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PRkKTcqsf+yQmgPlAhOeCX/ri0i7MXOnvVp2hav2uD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3sd8b9g9hl"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/user.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PRkKTcqsf+yQmgPlAhOeCX/ri0i7MXOnvVp2hav2uD0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/user.svg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\user.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PRkKTcqsf+yQmgPlAhOeCX/ri0i7MXOnvVp2hav2uD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PRkKTcqsf+yQmgPlAhOeCX/ri0i7MXOnvVp2hav2uD0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/why-choose-us-img.da0xfq9qmh.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\why-choose-us-img.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "375409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"taagw0mpsqAqxET+ZewiIGBA2BLEPvLyOucTXuuAl1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da0xfq9qmh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/why-choose-us-img.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-taagw0mpsqAqxET+ZewiIGBA2BLEPvLyOucTXuuAl1M="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/why-choose-us-img.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\images\\why-choose-us-img.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "375409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"taagw0mpsqAqxET+ZewiIGBA2BLEPvLyOucTXuuAl1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-taagw0mpsqAqxET+ZewiIGBA2BLEPvLyOucTXuuAl1M="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EgZm4B1nHbFyzs2Hqq7Vyw/rLaJNlxwpH+G44PZLGKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EgZm4B1nHbFyzs2Hqq7Vyw/rLaJNlxwpH+G44PZLGKw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/bootstrap.bundle.min.mfa5u92in3.js",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EgZm4B1nHbFyzs2Hqq7Vyw/rLaJNlxwpH+G44PZLGKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mfa5u92in3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/bootstrap.bundle.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EgZm4B1nHbFyzs2Hqq7Vyw/rLaJNlxwpH+G44PZLGKw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/custom.g6dt3mzyyf.js",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\custom.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+JKt4BjA34ksw1W9iJG4EOqsKGfiWFri6PKSOUu3al0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6dt3mzyyf"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/custom.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+JKt4BjA34ksw1W9iJG4EOqsKGfiWFri6PKSOUu3al0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/custom.js",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\custom.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+JKt4BjA34ksw1W9iJG4EOqsKGfiWFri6PKSOUu3al0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+JKt4BjA34ksw1W9iJG4EOqsKGfiWFri6PKSOUu3al0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/tiny-slider.42fqjfj2it.js",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\tiny-slider.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31738"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPLVlpvNDUrRo/QVwnhrFTb3MP9i3c18Hp20qbpYsqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "42fqjfj2it"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/tiny-slider.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPLVlpvNDUrRo/QVwnhrFTb3MP9i3c18Hp20qbpYsqY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/tiny-slider.js",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\assets\\js\\tiny-slider.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31738"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPLVlpvNDUrRo/QVwnhrFTb3MP9i3c18Hp20qbpYsqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPLVlpvNDUrRo/QVwnhrFTb3MP9i3c18Hp20qbpYsqY="
+        }
+      ]
+    },
+    {
       "Route": "FurnitureShopProjectRazil.bundle.scp.css",
       "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FurnitureShopProjectRazil.bundle.scp.css",
       "Selectors": [],
@@ -10624,6 +14086,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-xKFJuSwwNyS6AIE66Y/G9XR482wW6tuEvXm0+9XLSDU="
+        }
+      ]
+    },
+    {
+      "Route": "images/profiles/5408c711-24e8-49f7-91df-e6b178111de6.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\5408c711-24e8-49f7-91df-e6b178111de6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "547771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 18:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU="
+        }
+      ]
+    },
+    {
+      "Route": "images/profiles/5408c711-24e8-49f7-91df-e6b178111de6.ks4rxv3ilp.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\5408c711-24e8-49f7-91df-e6b178111de6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "547771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 18:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ks4rxv3ilp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/profiles/5408c711-24e8-49f7-91df-e6b178111de6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU="
+        }
+      ]
+    },
+    {
+      "Route": "images/profiles/a7299212-5de3-4c67-9465-08fe703fdb36.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\a7299212-5de3-4c67-9465-08fe703fdb36.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "547771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 13:31:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU="
+        }
+      ]
+    },
+    {
+      "Route": "images/profiles/a7299212-5de3-4c67-9465-08fe703fdb36.ks4rxv3ilp.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\a7299212-5de3-4c67-9465-08fe703fdb36.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "547771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 13:31:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ks4rxv3ilp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/profiles/a7299212-5de3-4c67-9465-08fe703fdb36.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ6Brau0XGd1mAuY5nbCEjWfndS8C7r/lDFXpyo9eaU="
+        }
+      ]
+    },
+    {
+      "Route": "images/profiles/e8649aba-8f4c-4958-b196-b7f395e06156.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\e8649aba-8f4c-4958-b196-b7f395e06156.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YHn6cbX/LCrpcTKs25LEK6MhnR4tEcfp6YpXw0kxB3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 13:20:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YHn6cbX/LCrpcTKs25LEK6MhnR4tEcfp6YpXw0kxB3A="
+        }
+      ]
+    },
+    {
+      "Route": "images/profiles/e8649aba-8f4c-4958-b196-b7f395e06156.s9k8q9dylq.jpg",
+      "AssetFile": "C:\\Users\\Baku\\Desktop\\RazilProject\\FurnitureShopProjectRazil\\FurnitureShopProjectRazil\\wwwroot\\images\\profiles\\e8649aba-8f4c-4958-b196-b7f395e06156.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YHn6cbX/LCrpcTKs25LEK6MhnR4tEcfp6YpXw0kxB3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 13:20:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9k8q9dylq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/profiles/e8649aba-8f4c-4958-b196-b7f395e06156.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YHn6cbX/LCrpcTKs25LEK6MhnR4tEcfp6YpXw0kxB3A="
         }
       ]
     }

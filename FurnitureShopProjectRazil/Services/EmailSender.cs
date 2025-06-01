@@ -1,70 +1,97 @@
-﻿using Microsoft.Extensions.Options; // IOptions üçün
+﻿// CaterManagementSystem.Services/EmailSender.cs
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging; // ILogger üçün
 using MimeKit;
-using MimeKit.Text;
+using MimeKit.Text; // TextFormat.Html üçün
 using MailKit.Net.Smtp;
-using MailKit.Security; // SecureSocketOptions üçün
-using System.Threading.Tasks;
+using MailKit.Security;
 using System;
-using FurnitureShopProjectRazil.Interfaces; // Exception üçün
+using System.Threading.Tasks;
+using FurnitureShopProjectRazil.Services;
+using FurnitureShopProjectRazil.Interfaces;
 
-namespace SchoolSystem.Services
+namespace FurnitureShopProjectRazil.Services
 {
     public class EmailSender : IEmailSender
     {
-        private readonly EmailSettings _emailSettings;
+        private readonly MailSettings _mailSettings;
+        private readonly ILogger<EmailSender> _logger; // ILogger istifadə edirik
 
-        public EmailSender(IOptions<EmailSettings> emailSettings)
+        public EmailSender(IOptions<MailSettings> mailSettings, ILogger<EmailSender> logger) // Logger-i DI ilə alırıq
         {
-            _emailSettings = emailSettings.Value;
+            _mailSettings = mailSettings.Value;
+            _logger = logger; // Logger-i təyin edirik
         }
 
         public async Task SendEmailAsync(string toEmail, string subject, string htmlMessage)
         {
-            if (string.IsNullOrEmpty(_emailSettings.SmtpServer) ||
-                string.IsNullOrEmpty(_emailSettings.SmtpUsername) ||
-                string.IsNullOrEmpty(_emailSettings.SmtpPassword) ||
-                string.IsNullOrEmpty(_emailSettings.FromAddress))
+            if (string.IsNullOrEmpty(_mailSettings.SmtpServer) ||
+                _mailSettings.SmtpPort <= 0 ||
+                string.IsNullOrEmpty(_mailSettings.SmtpUsername) ||
+                string.IsNullOrEmpty(_mailSettings.SmtpPassword) ||
+                string.IsNullOrEmpty(_mailSettings.FromAddress))
             {
-                // Loglama: Email ayarları düzgün konfiqurasiya edilməyib
-                Console.WriteLine("Email ayarları tam deyil. E-poçt göndərilə bilmədi.");
-                // throw new InvalidOperationException("Email settings are not configured properly.");
-                return; // Və ya xəta fırlat
+                _logger.LogError("Mail settings are not configured properly. SmtpServer: {SmtpServer}, Port: {SmtpPort}, Username: {SmtpUsername}, FromAddress: {FromAddress}. Email not sent to {ToEmail}",
+                    _mailSettings.SmtpServer, _mailSettings.SmtpPort, _mailSettings.SmtpUsername, _mailSettings.FromAddress, toEmail);
+                throw new InvalidOperationException("Email settings are not properly configured in appsettings.json.");
             }
 
             try
             {
                 var email = new MimeMessage();
-                email.From.Add(new MailboxAddress(_emailSettings.FromName ?? "SchoolSystem", _emailSettings.FromAddress));
+                email.From.Add(new MailboxAddress(_mailSettings.FromName ?? "CaterManagementSystem", _mailSettings.FromAddress));
                 email.To.Add(MailboxAddress.Parse(toEmail));
                 email.Subject = subject;
+                // Əvvəlki kodunuzda TextPart istifadə olunub, CaterManagementSystem-də BodyBuilder.
+                // Hər ikisi də işləyir. TextPart daha sadədir.
                 email.Body = new TextPart(TextFormat.Html) { Text = htmlMessage };
+                // Və ya BodyBuilder ilə (əvvəlki CaterManagementSystem kodunuzdakı kimi):
+                // var builder = new BodyBuilder { HtmlBody = htmlMessage };
+                // email.Body = builder.ToMessageBody();
 
                 using var smtp = new SmtpClient();
+                smtp.Timeout = 30000; // 30 saniyəlik timeout
 
-                // Serverin tələb etdiyi təhlükəsizlik seçiminə görə dəyişə bilər
-                // Gmail üçün: Port 587, SecureSocketOptions.StartTls
-                // Outlook üçün: Port 587, SecureSocketOptions.StartTls
-                // Bəzi hostinqlər: Port 465, SecureSocketOptions.SslOnConnect
                 SecureSocketOptions secureSocketOptions;
-                if (_emailSettings.UseSsl) // Əgər port 465 kimi bir şeydirsə
+                // appsettings.json-dakı UseSsl və SmtpPort dəyərlərinə görə
+                if (_mailSettings.SmtpPort == 587) // Gmail/Outlook üçün ümumi StartTls portu
+                {
+                    secureSocketOptions = SecureSocketOptions.StartTls;
+                }
+                else if (_mailSettings.SmtpPort == 465) // Ümumi SslOnConnect portu
                 {
                     secureSocketOptions = SecureSocketOptions.SslOnConnect;
                 }
-                else // Əgər port 587 kimi bir şeydirsə (StartTls)
+                else if (_mailSettings.UseSsl) // Əgər UseSsl explicitly true isə
                 {
-                    secureSocketOptions = SecureSocketOptions.StartTlsWhenAvailable; // Və ya birbaşa StartTls
+                    secureSocketOptions = SecureSocketOptions.SslOnConnect;
+                }
+                else // Digər hallar və ya server özü qərar versin
+                {
+                    // StartTlsWhenAvailable daha təhlükəsiz bir default ola bilər
+                    secureSocketOptions = SecureSocketOptions.StartTlsWhenAvailable;
                 }
 
-                await smtp.ConnectAsync(_emailSettings.SmtpServer, _emailSettings.SmtpPort, secureSocketOptions);
-                await smtp.AuthenticateAsync(_emailSettings.SmtpUsername, _emailSettings.SmtpPassword);
+                _logger.LogInformation("Connecting to SMTP: {SmtpServer}:{SmtpPort} with options {SecureSocketOptions}",
+                    _mailSettings.SmtpServer, _mailSettings.SmtpPort, secureSocketOptions);
+
+                await smtp.ConnectAsync(_mailSettings.SmtpServer, _mailSettings.SmtpPort, secureSocketOptions);
+                _logger.LogInformation("Connected. Authenticating with {SmtpUsername}...", _mailSettings.SmtpUsername);
+
+                await smtp.AuthenticateAsync(_mailSettings.SmtpUsername, _mailSettings.SmtpPassword);
+                _logger.LogInformation("Authenticated. Sending email to {ToEmail}...", toEmail);
+
                 await smtp.SendAsync(email);
+                _logger.LogInformation("Email sent successfully to {ToEmail}.", toEmail);
+
                 await smtp.DisconnectAsync(true);
+                _logger.LogInformation("Disconnected from SMTP server.");
             }
             catch (Exception ex)
             {
-                // Xətanı loglayın
-                Console.WriteLine($"E-poçt göndərmə xətası ({toEmail}): {ex.ToString()}");
-                // throw; // E-poçt göndərmənin kritik olduğu hallarda xətanı yuxarıya fırlatmaq olar
+                _logger.LogError(ex, "Error sending email to {ToEmail}. Subject: {Subject}. Exception: {ExceptionDetails}",
+                    toEmail, subject, ex.ToString()); // ex.ToString() daha çox detal verir
+                throw; // Xətanı yuxarıya ötürürük ki, AccountController-da tutulsun
             }
         }
     }

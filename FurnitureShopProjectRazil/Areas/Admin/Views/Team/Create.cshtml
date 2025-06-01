@@ -1,0 +1,60 @@
+﻿@model FurnitureShopProjectRazil.Models.Team
+@{
+    ViewData["Title"] = "Yeni Komanda Üzvü";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">@ViewData["Title"]</h4>
+                        <form class="forms-sample" asp-action="Create" method="post" enctype="multipart/form-data">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                            <div class="form-group">
+                                <label asp-for="Fullname" class="control-label"></label>
+                                <input asp-for="Fullname" class="form-control" />
+                                <span asp-validation-for="Fullname" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Photo" class="control-label">Şəkil</label>
+                                <input asp-for="Photo" type="file" class="form-control" />
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="ProfessionId" class="control-label">Peşə</label>
+                                <select asp-for="ProfessionId" class="form-control" asp-items="ViewBag.Professions">
+                                    <option value="">-- Peşə Seçin --</option>
+                                </select>
+                                <span asp-validation-for="ProfessionId" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Biography" class="control-label"></label>
+                                <textarea asp-for="Biography" class="form-control" rows="5"></textarea>
+                                <span asp-validation-for="Biography" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="PersonalNote" class="control-label">Şəxsi Qeyd</label>
+                                <textarea asp-for="PersonalNote" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="PersonalNote" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Yarat</button>
+                            <a asp-action="Index" class="btn btn-light">Ləğv et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

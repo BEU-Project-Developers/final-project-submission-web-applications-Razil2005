@@ -3,7 +3,6 @@ using FurnitureShopProjectRazil.Interfaces;
 using FurnitureShopProjectRazil.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using SchoolSystem.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +17,7 @@ builder.Services.AddScoped<IPasswordService, PasswordService>();
 
 // === YEN? E-POÇT SERV?S? QEYD?YYATI BA?LAYIR ===
 // EmailSettings-i konfiqurasiyadan oxumaq üçün
-builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 // EmailSender servisini qeydiyyatdan keçirm?k
 // AddTransient istifad? edirik, çünki EmailSender h?r e-poçt gönd?ri?i üçün yeni SmtpClient yarad?r.
 builder.Services.AddTransient<IEmailSender, EmailSender>();

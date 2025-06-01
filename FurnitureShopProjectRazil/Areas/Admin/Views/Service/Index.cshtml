@@ -1,0 +1,86 @@
+﻿@model List<FurnitureShopProjectRazil.Models.Services>
+@{
+    ViewData["Title"] = "Xidmətlər";
+    int count = 1;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ViewData["Title"]</h4>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success" role="alert">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+
+            <a asp-controller="Service" asp-action="Create" class="btn btn-primary mb-3">
+                <i class="mdi mdi-plus-circle-outline"></i> Yeni Xidmət Əlavə Et
+            </a>
+
+            @if (Model.Any())
+            {
+                <div class="table-responsive pt-3">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>İkon</th>
+                                <th>@Html.DisplayNameFor(model => model.First().Title)</th>
+                                <th>@Html.DisplayNameFor(model => model.First().Subtitle)</th>
+                                <th>Ayarlar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@(count++)</td>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(item.Icon))
+                                        {
+                                            @if (item.Icon.StartsWith("/") || item.Icon.StartsWith("~")) // Şəkil yolu olduğunu fərz edirik
+                                            {
+                                                <img src="@Url.Content(item.Icon)" alt="@item.Title" style="width:40px; height:40px; object-fit:contain;" />
+                                            }
+                                            else // CSS class olduğunu fərz edirik
+                                            {
+                                                <i class="@item.Icon" style="font-size: 24px;" title="@item.Icon"></i>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <span>-</span>
+                                        }
+                                    </td>
+                                    <td>@item.Title</td>
+                                    <td>
+                                        @(item.Subtitle.Length > 70 ? item.Subtitle.Substring(0, 70) + "..." : item.Subtitle)
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Service" asp-action="Update" asp-route-id="@item.Id" class="btn btn-sm btn-warning" title="Redaktə et"><i class="mdi mdi-pencil"></i></a>
+                                        <a asp-controller="Service" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" title="Sil"><i class="mdi mdi-delete"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info mt-3">
+                    Heç bir xidmət tapılmadı.
+                </div>
+            }
+        </div>
+    </div>
+</div>

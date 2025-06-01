@@ -1,0 +1,40 @@
+﻿@model FurnitureShopProjectRazil.Models.About
+@{
+    ViewData["Title"] = "Haqqımızda Məlumatını Sil";
+}
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Silinmə Təsdiqi</h4>
+                        <h5>Aşağıdakı məlumatı silmək istədiyinizə əminsinizmi?</h5>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-4">Əsas Başlıq</dt>
+                            <dd class="col-sm-8">@Model.Title</dd>
+
+                            <dt class="col-sm-4">Əsas Altbaşlıq</dt>
+                            <dd class="col-sm-8">@Model.Subtitle</dd>
+
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <dt class="col-sm-4">Əsas Şəkil</dt>
+                                <dd class="col-sm-8"><img src="@Url.Content(Model.ImagePath)" alt="Şəkil" style="max-width:150px;" /></dd>
+                            }
+                        </dl>
+
+                        <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                            @* asp-action="Delete" olmalıdır, çünki Controller-də ActionName("Delete") var *@
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" asp-for="Id" /> @* Bu artıqdır, çünki id route-dan gəlir *@
+                            <button type="submit" class="btn btn-danger">Bəli, Sil</button>
+                            <a asp-action="Index" class="btn btn-secondary">Xeyr, İmtina Et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

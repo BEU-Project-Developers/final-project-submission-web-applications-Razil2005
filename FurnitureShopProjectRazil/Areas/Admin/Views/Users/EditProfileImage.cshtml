@@ -1,0 +1,53 @@
+﻿@model FurnitureShopProjectRazil.Models.UserDetails
+@{
+    ViewData["Title"] = "Profil Şəklini Redaktə Et";
+    // User adını almaq üçün əlavə məlumat çəkmək olar, amma bu nümunədə sadə saxlayırıq.
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">@ViewData["Title"] (İstifadəçi ID: @Model.UserId)</h4>
+                        <form class="forms-sample" asp-action="EditProfileImage" method="post" enctype="multipart/form-data">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="UserId" />
+                            <input type="hidden" asp-for="Id" /> @* Əgər UserDetails-in öz Id-si varsa və update ediriksə *@
+                            <input type="hidden" asp-for="ImagePath" />
+
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <div class="form-group">
+                                    <label>Hazırkı Şəkil</label><br />
+                                    <img src="@Url.Content(Model.ImagePath)" alt="Profil Şəkli" style="max-width: 150px; max-height: 150px; border:1px solid #ccc; padding:5px;" />
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="form-group">
+                                    <label>Hazırda profil şəkli yoxdur.</label><br />
+                                    <img src="@Url.Content("~/images/default_person.png")" alt="Profil Şəkli" style="max-width: 150px; max-height: 150px; border:1px solid #ccc; padding:5px;" />
+                                </div>
+                            }
+
+                            <div class="form-group">
+                                <label asp-for="Photo" class="control-label">Yeni Şəkil Yüklə</label>
+                                <input asp-for="Photo" type="file" class="form-control" />
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Yadda Saxla</button>
+                            <a asp-action="Index" class="btn btn-light">Ləğv Et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,44 @@
+﻿@model FurnitureShopProjectRazil.Models.Testimonial
+@{
+    ViewData["Title"] = "Rəyi Sil";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Silinmə Təsdiqi</h4>
+                        <h5>Aşağıdakı rəyi silmək istədiyinizə əminsinizmi?</h5>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.AuthorFullName)</dt>
+                            <dd class="col-sm-8">@Model.AuthorFullName</dd>
+
+                            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.AuthorTitle)</dt>
+                            <dd class="col-sm-8">@Model.AuthorTitle</dd>
+
+                            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Content)</dt>
+                            <dd class="col-sm-8">@Html.Raw(Model.Content.Length > 100 ? Model.Content.Substring(0, 100) + "..." : Model.Content)</dd>
+
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <dt class="col-sm-4">Şəkil</dt>
+                                <dd class="col-sm-8"><img src="@Url.Content(Model.ImagePath)" alt="@Model.AuthorFullName" style="max-width:100px;" /></dd>
+                            }
+                            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.DatePosted)</dt>
+                            <dd class="col-sm-8">@Model.DatePosted.ToString("dd/MM/yyyy HH:mm")</dd>
+                        </dl>
+
+                        <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger">Bəli, Sil</button>
+                            <a asp-action="Index" class="btn btn-secondary">Xeyr, İmtina Et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

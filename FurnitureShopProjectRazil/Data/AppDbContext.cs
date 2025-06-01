@@ -22,7 +22,14 @@ namespace FurnitureShopProjectRazil.Data
         public DbSet<Blog> Blogs { get; set; } = null!;
         public DbSet<Team> Teams { get; set; } = null!; // Team modelini əlavə etdim (əgər varsa)
         public DbSet<Testimonial> Testimonials { get; set; } = null!; // Testimonial modelini əlavə etdim (əgər varsa)
-        // public DbSet<Contact> Contacts { get; set; } = null!; // Contact modeliniz əgər istifadə olunursa
+        public DbSet<UserDetails> UserDetails { get; set; } = null!;
+        public DbSet<Contact> Contacts { get; set; } = null!;
+        
+        public DbSet<Cart> Carts { get; set; } = null!;
+        public DbSet<CartItem> CartItems { get; set; } = null!;
+        public DbSet<Profession> Professions { get; set; } = null!;
+
+        // ...
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -54,7 +61,7 @@ namespace FurnitureShopProjectRazil.Data
             // Role modelində RoleName unikal olmalıdır
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.HasIndex(r => r.Rolename).IsUnique();
+                entity.HasIndex(r => r.Name).IsUnique();
             });
 
             // İlkin Rol Dataları (Seed Data) - Program.cs-də də edilə bilər, amma burada da saxlamaq olar.

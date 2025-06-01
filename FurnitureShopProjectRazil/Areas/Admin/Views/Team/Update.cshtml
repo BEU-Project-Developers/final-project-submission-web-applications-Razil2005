@@ -1,0 +1,69 @@
+﻿@model FurnitureShopProjectRazil.Models.Team
+@{
+    ViewData["Title"] = "Komanda Üzvünü Redaktə Et";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">@ViewData["Title"]</h4>
+                        <form class="forms-sample" asp-action="Update" asp-route-id="@Model.Id" method="post" enctype="multipart/form-data">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id" />
+                            <input type="hidden" asp-for="ImagePath" /> <!-- Köhnə şəkil yolunu saxlamaq üçün -->
+
+                            <div class="form-group">
+                                <label asp-for="Fullname" class="control-label"></label>
+                                <input asp-for="Fullname" class="form-control" />
+                                <span asp-validation-for="Fullname" class="text-danger"></span>
+                            </div>
+
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <div class="form-group">
+                                    <label>Hazırkı Şəkil</label><br />
+                                    <img src="@Url.Content(Model.ImagePath)" alt="@Model.Fullname" style="max-width: 150px; max-height: 150px; border:1px solid #ccc; padding:5px;" />
+                                </div>
+                            }
+                            <div class="form-group">
+                                <label asp-for="Photo" class="control-label">Şəkli Dəyiş</label>
+                                <input asp-for="Photo" type="file" class="form-control" />
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="ProfessionId" class="control-label">Peşə</label>
+                                <select asp-for="ProfessionId" class="form-control" asp-items="ViewBag.Professions">
+                                    <option value="">-- Peşə Seçin --</option>
+                                </select>
+                                <span asp-validation-for="ProfessionId" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Biography" class="control-label"></label>
+                                <textarea asp-for="Biography" class="form-control" rows="5"></textarea>
+                                <span asp-validation-for="Biography" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="PersonalNote" class="control-label">Şəxsi Qeyd</label>
+                                <textarea asp-for="PersonalNote" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="PersonalNote" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Yenilə</button>
+                            <a asp-action="Index" class="btn btn-light">Ləğv et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

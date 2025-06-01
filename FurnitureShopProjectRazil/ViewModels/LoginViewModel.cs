@@ -4,17 +4,16 @@ namespace FurnitureShopProjectRazil.ViewModels
 {
     public class LoginViewModel
     {
-        [Required(ErrorMessage = "İstifadəçi adı və ya e-poçt tələb olunur.")]
-        [Display(Name = "İstifadəçi adı və ya E-poçt")]
-        [StringLength(100)]
-        public string UsernameOrEmail { get; set; } = string.Empty;
+        [Required(ErrorMessage = "E-poçt və ya istifadəçi adı tələb olunur.")]
+        [Display(Name = "E-poçt və ya İstifadəçi adı")]
+        public string UsernameOrEmail { get; set; } // Controller-dəki ilə uyğunlaşdırıldı
 
-        [Required(ErrorMessage = "Parol tələb olunur.")]
+        [Required(ErrorMessage = "Şifrə tələb olunur.")]
         [DataType(DataType.Password)]
-        [Display(Name = "Parolunuz")]
-        public string Password { get; set; } = string.Empty;
+        [Display(Name = "Şifrə")]
+        public string Password { get; set; }
 
-        [Display(Name = "Məni xatırla")]
+        [Display(Name = "Məni xatırla?")]
         public bool RememberMe { get; set; }
     }
 }

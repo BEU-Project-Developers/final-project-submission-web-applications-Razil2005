@@ -4,28 +4,21 @@ namespace FurnitureShopProjectRazil.ViewModels
 {
     public class ResetPasswordViewModel
     {
-        // Bu sahələr URL-dən gələn parametrlərdən (userId, token)
-        // və ya EnterResetCodeViewModel-dən (Email, Code) doldurulacaq
-        // və formda hidden olaraq saxlanılacaq.
         [Required]
-        public string? UserId { get; set; } // Linkdən gələn userId
-
+        public string UserId { get; set; } // string olaraq saxlanılır, çünki URL-dən gəlir
 
         [Required]
-        public string? Token { get; set; } // Linkdən gələn URL-kodlanmış token VƏ YA EnterResetCode-dan gələn 6 rəqəmli kod
+        public string Token { get; set; } // URL üçün kodlanmış token
 
-        // public string? Email { get; set; } // Əgər EnterResetCode-dan gəlirsə və ya View-da göstərmək üçün lazım olarsa
-
-        // Bu sahələr istifadəçi tərəfindən doldurulacaq
-        [Required(ErrorMessage = "Yeni parol tələb olunur.")]
+        [Required(ErrorMessage = "Yeni şifrə tələb olunur.")]
+        [StringLength(100, ErrorMessage = "{0} ən azı {2} simvol uzunluğunda olmalıdır.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "Parol ən az 6 simvol olmalıdır.")]
-        [Display(Name = "Yeni Parol")]
-        public string Password { get; set; } = string.Empty;
+        [Display(Name = "Yeni Şifrə")]
+        public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Compare(nameof(Password), ErrorMessage = "Yeni parol və təkrar parol eyni deyil.")]
-        [Display(Name = "Yeni Parolu Təsdiqləyin")]
-        public string ConfirmPassword { get; set; } = string.Empty;
+        [Display(Name = "Yeni Şifrəni Təsdiqləyin")]
+        [Compare("Password", ErrorMessage = "Şifrə və təsdiq şifrəsi uyğun gəlmir.")]
+        public string ConfirmPassword { get; set; }
     }
 }

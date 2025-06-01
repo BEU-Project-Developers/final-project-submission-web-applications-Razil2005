@@ -1,10 +1,16 @@
-﻿<!-- Start Hero Section -->
+﻿@model FurnitureShopProjectRazil.ViewModels.CartViewModel
+@{
+    ViewData["Title"] = "Shopping Cart";
+    var enUS = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+}
+
+<!-- Start Hero Section -->
 <div class="hero">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-5">
                 <div class="intro-excerpt">
-                    <h1>Cart</h1>
+                    <h1>@ViewData["Title"]</h1>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -14,134 +20,251 @@
 </div>
 <!-- End Hero Section -->
 
-
-
 <div class="untree_co-section before-footer-section">
     <div class="container">
-        <div class="row mb-5">
-            <form class="col-md-12" method="post">
-                <div class="site-blocks-table">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="product-thumbnail">Image</th>
-                                <th class="product-name">Product</th>
-                                <th class="product-price">Price</th>
-                                <th class="product-quantity">Quantity</th>
-                                <th class="product-total">Total</th>
-                                <th class="product-remove">Remove</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="product-thumbnail">
-                                    <img src="images/product-1.png" alt="Image" class="img-fluid">
-                                </td>
-                                <td class="product-name">
-                                    <h2 class="h5 text-black">Product 1</h2>
-                                </td>
-                                <td>$49.00</td>
-                                <td>
-                                    <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                                        </div>
-                                        <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td>$49.00</td>
-                                <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                            </tr>
-
-                            <tr>
-                                <td class="product-thumbnail">
-                                    <img src="images/product-2.png" alt="Image" class="img-fluid">
-                                </td>
-                                <td class="product-name">
-                                    <h2 class="h5 text-black">Product 2</h2>
-                                </td>
-                                <td>$49.00</td>
-                                <td>
-                                    <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                                        </div>
-                                        <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td>$49.00</td>
-                                <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </form>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="row mb-5">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <button class="btn btn-black btn-sm btn-block">Update Cart</button>
-                    </div>
-                    <div class="col-md-6">
-                        <button class="btn btn-outline-black btn-sm btn-block">Continue Shopping</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <label class="text-black h4" for="coupon">Coupon</label>
-                        <p>Enter your coupon code if you have one.</p>
-                    </div>
-                    <div class="col-md-8 mb-3 mb-md-0">
-                        <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn btn-black">Apply Coupon</button>
+        @if (Model != null && Model.Items.Any())
+        {
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="site-blocks-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail">Image</th>
+                                    <th class="product-name">Product</th>
+                                    <th class="product-price">Price</th>
+                                    <th class="product-quantity">Quantity</th>
+                                    <th class="product-total">Total</th>
+                                    <th class="product-remove">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <img src="~/@(string.IsNullOrEmpty(item.ProductImagePath) ? "images/default-product.png" : item.ProductImagePath)"
+                                                 alt="@item.ProductName" class="img-fluid">
+                                        </td>
+                                        <td class="product-name">
+                                            <h2 class="h5 text-black">@item.ProductName</h2>
+                                        </td>
+                                        <td>@string.Format(enUS, "{0:C}", item.Price)</td>
+                                        <td>
+                                            <form asp-controller="Cart" asp-action="UpdateQuantity" method="post" class="update-quantity-form">
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                @Html.AntiForgeryToken()
+                                                <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-outline-black decrease" type="button">−</button>
+                                                    </div>
+                                                    <input type="number" name="quantity" class="form-control text-center quantity-amount" value="@item.Quantity" min="1" data-product-id="@item.ProductId">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-black increase" type="button">+</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>@string.Format(enUS, "{0:C}", item.TotalPrice)</td>
+                                        <td>
+                                            <form asp-controller="Cart" asp-action="RemoveFromCart" method="post">
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-black btn-sm">X</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pl-5">
-                <div class="row justify-content-end">
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-12 text-right border-bottom mb-5">
-                                <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <span class="text-black">Subtotal</span>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <strong class="text-black">$230.00</strong>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-md-6">
-                                <span class="text-black">Total</span>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <strong class="text-black">$230.00</strong>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row mb-5">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            @* <button class="btn btn-black btn-sm btn-block">Update Cart</button> - Bu düyməyə artıq ehtiyac yoxdur, çünki say dəyişikliyi avtomatik submit edir *@
+                        </div>
+                        <div class="col-md-6">
+                            <a asp-controller="Shop" asp-action="Index" class="btn btn-outline-black btn-sm btn-block">Continue Shopping</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="text-black h4" for="coupon">Coupon</label>
+                            <p>Enter your coupon code if you have one.</p>
+                        </div>
+                        <div class="col-md-8 mb-3 mb-md-0">
+                            <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-black">Apply Coupon</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pl-5">
+                    <div class="row justify-content-end">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-12 text-right border-bottom mb-5">
+                                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <span class="text-black">Subtotal</span>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <strong class="text-black">@string.Format(enUS, "{0:C}", Model.GrandTotal)</strong>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-6">
+                                    <span class="text-black">Total</span>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <strong class="text-black">@string.Format(enUS, "{0:C}", Model.GrandTotal)</strong>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a asp-controller="Checkout" asp-action="Index" class="btn btn-black btn-lg py-3 btn-block">Proceed To Checkout</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-4">Your cart is currently empty.</h2>
+                    <p><a asp-controller="Shop" asp-action="Index" class="btn btn-outline-black btn-lg">Continue Shopping</a></p>
+                </div>
+            </div>
+        }
     </div>
 </div>
+@* ... (View-un yuxarı hissəsi olduğu kimi qalır) ... *@
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var debounceTimer;
+
+                    function updateCartItemUI(productId, newQuantity, newTotalPriceForItem, itemRemoved) {
+            var row = $('input[name="productId"][value="' + productId + '"]').closest('tr');
+            if (itemRemoved) {
+                row.fadeOut(300, function() { $(this).remove(); });
+                // Əgər səbət tamamilə boşalırsa, "boş səbət" mesajını göstər
+                if ($('table tbody tr').length === 1) {
+                     setTimeout(function() {
+                        if ($('table tbody tr').length === 0) {
+                            $('.site-blocks-table').parent().html(
+                                '<div class="col-md-12 text-center">' +
+                                '<h2 class="mb-4">Your cart is currently empty.</h2>' +
+                                '<p><a href="@Url.Action("Index", "Shop")" class="btn btn-outline-black btn-lg">Continue Shopping</a></p>' +
+                                '</div>');
+                            $('.row.mb-5').eq(1).hide(); // "Cart Totals" və "Coupon" hissəsini gizlət
+                        }
+                     }, 350);
+                }
+            } else {
+                row.find('.quantity-amount').val(newQuantity);
+
+                // TotalPrice üçün olan <td> elementini yeniləyirik
+                // Əvvəlki şərhdəki yanlışlıq düzəldildi.
+                // Biz Controller-dən gələn 'newTotalPriceForItem' dəyərini istifadə edirik.
+                var enUSFormatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+                row.find('td').eq(4).text(enUSFormatter.format(newTotalPriceForItem)); // 5-ci sütun (Total)
+            }
+        
+            }
+
+            function updateGrandTotalUI(newGrandTotal) {
+                var enUS = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+                // "Cart Totals" hissəsindəki Subtotal və Total məbləğlərini yenilə
+                $('.col-md-7 .row.mb-3 .text-right strong').text(enUS.format(newGrandTotal));
+                $('.col-md-7 .row.mb-5 .text-right strong').text(enUS.format(newGrandTotal));
+            }
+
+
+            function handleQuantityChange(formElement, newQuantity) {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(function () {
+                    var form = $(formElement);
+                    var productId = form.find('input[name="productId"]').val();
+                    // Input-un dəyərini yeni saya yeniləyirik, çünki istifadəçi birbaşa yaza bilər
+                    form.find('input[name="quantity"]').val(newQuantity);
+
+                    $.ajax({
+                        url: form.attr('action'), // Cart/UpdateQuantity
+                        type: form.attr('method'), // POST
+                        data: form.serialize(),
+                        success: function (response) {
+                            if (response.success) {
+                                toastr.success(response.message, 'Səbət');
+                                updateCartItemUI(response.productId, response.newQuantity, response.newTotalPriceForItem, response.itemRemoved);
+                                updateGrandTotalUI(response.newGrandTotal);
+
+                                if (typeof updateCartBadge === 'function' && response.cartItemCount !== undefined) {
+                                    updateCartBadge(response.cartItemCount);
+                                } else if (response.cartItemCount !== undefined && $('#cart-item-count').length) {
+                                   $('#cart-item-count').text(response.cartItemCount);
+                                    if(response.cartItemCount > 0) {
+                                        $('#cart-item-count').removeClass('d-none');
+                                    } else {
+                                        $('#cart-item-count').addClass('d-none');
+                                    }
+                                }
+                            } else {
+                                toastr.error(response.message || 'Say yenilənərkən xəta baş verdi.', 'Xəta');
+                                // Əgər xəta olarsa, inputu əvvəlki dəyərinə qaytarmaq olar (əgər serverdə dəyişməyibsə)
+                                // Bunu etmək üçün əvvəlki dəyəri saxlamaq lazımdır.
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("AJAX Error updating quantity: ", status, error, xhr.responseText);
+                            toastr.error('Sistem xətası. Zəhmət olmasa, yenidən cəhd edin.', 'Xəta');
+                        }
+                    });
+                }, 750); // 750ms debounce
+            }
+
+            // "+" düyməsinə klik
+            $('.quantity-container .increase').on('click', function () {
+                var input = $(this).closest('.quantity-container').find('.quantity-amount');
+                var currentValue = parseInt(input.val());
+                var newValue = currentValue + 1;
+                input.val(newValue); // Inputu dərhal yenilə
+                handleQuantityChange(input.closest('form.update-quantity-form'), newValue);
+            });
+
+            // "-" düyməsinə klik
+            $('.quantity-container .decrease').on('click', function () {
+                var input = $(this).closest('.quantity-container').find('.quantity-amount');
+                var currentValue = parseInt(input.val());
+                var newValue = currentValue - 1;
+                // if (newValue < 0) newValue = 0; // Controller 0-ı silmə kimi qəbul edir
+                input.val(newValue); // Inputu dərhal yenilə (0 olsa belə)
+                handleQuantityChange(input.closest('form.update-quantity-form'), newValue);
+            });
+
+            // Say inputuna birbaşa dəyər yazıldıqda
+            $('.quantity-amount').on('change', function () {
+                var input = $(this);
+                var newValue = parseInt(input.val());
+                if (isNaN(newValue) || newValue < 0) { // 0 ola bilər (silmək üçün)
+                    newValue = 0; // Və ya istifadəçinin yazdığı səhv dəyəri düzəlt
+                    input.val(newValue);
+                }
+                handleQuantityChange(input.closest('form.update-quantity-form'), newValue);
+            });
+        });
+    </script>
+}

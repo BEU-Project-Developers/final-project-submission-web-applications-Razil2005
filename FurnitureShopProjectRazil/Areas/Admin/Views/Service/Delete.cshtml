@@ -1,0 +1,53 @@
+﻿@model FurnitureShopProjectRazil.Models.Services
+@{
+    ViewData["Title"] = "Xidməti Sil";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Silinmə Təsdiqi</h4>
+                        <h5>Aşağıdakı xidməti silmək istədiyinizə əminsinizmi?</h5>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Title)</dt>
+                            <dd class="col-sm-9">@Model.Title</dd>
+
+                            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Subtitle)</dt>
+                            <dd class="col-sm-9">@Model.Subtitle</dd>
+
+                            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Icon)</dt>
+                            <dd class="col-sm-9">
+                                @if (!string.IsNullOrEmpty(Model.Icon))
+                                {
+                                    @if (Model.Icon.StartsWith("/") || Model.Icon.StartsWith("~"))
+                                    {
+                                        <img src="@Url.Content(Model.Icon)" alt="ikon" style="max-width: 30px; max-height: 30px;" />
+                                    }
+                                    else
+                                    {
+                                        <i class="@Model.Icon" style="font-size: 1.5rem;"></i>
+                                    }
+                                    <code>(@Model.Icon)</code>
+                                }
+                                else
+                                {
+                                    <span>(İkon yoxdur)</span>
+                                }
+                            </dd>
+                        </dl>
+
+                        <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger">Bəli, Sil</button>
+                            <a asp-action="Index" class="btn btn-secondary">Xeyr, İmtina Et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

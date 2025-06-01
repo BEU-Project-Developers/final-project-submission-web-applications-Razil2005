@@ -1,0 +1,63 @@
+﻿@model FurnitureShopProjectRazil.Models.Services
+@{
+    ViewData["Title"] = "Xidməti Redaktə Et";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">@ViewData["Title"]</h4>
+                        <form class="forms-sample" asp-action="Update" asp-route-id="@Model.Id" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id" />
+
+                            <div class="form-group">
+                                <label asp-for="Icon" class="control-label">İkon (CSS Class və ya Şəkil Yolu)</label>
+                                <input asp-for="Icon" class="form-control" placeholder="Məs: fas fa-truck və ya /images/icons/truck.svg" />
+                                <span asp-validation-for="Icon" class="text-danger"></span>
+                                <small class="form-text text-muted">FontAwesome ikonları üçün class adı (məs: "fas fa-cogs") və ya serverdəki şəkil üçün yol (məs: "/uploads/service_icons/my_icon.png") daxil edin.</small>
+                                @if (!string.IsNullOrEmpty(Model.Icon))
+                                {
+                                    <div class="mt-2">
+                                        Hazırkı ikon:
+                                        @if (Model.Icon.StartsWith("/") || Model.Icon.StartsWith("~"))
+                                        {
+                                            <img src="@Url.Content(Model.Icon)" alt="ikon" style="max-width: 50px; max-height: 50px; vertical-align: middle;" />
+                                        }
+                                        else
+                                        {
+                                            <i class="@Model.Icon" style="font-size: 2rem; vertical-align: middle;"></i>
+                                        }
+                                        <code>(@Model.Icon)</code>
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Title" class="control-label"></label>
+                                <input asp-for="Title" class="form-control" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Subtitle" class="control-label"></label>
+                                <textarea asp-for="Subtitle" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="Subtitle" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Yenilə</button>
+                            <a asp-action="Index" class="btn btn-light">Ləğv et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,17 +1,23 @@
 ﻿using FurnitureShopProjectRazil.Data;
-using FurnitureShopProjectRazil.Interfaces; // IPasswordService, IEmailSender
-using FurnitureShopProjectRazil.Models;   // User, Role, UserRole
-using FurnitureShopProjectRazil.ViewModels; // Bütün ViewModellər
+using FurnitureShopProjectRazil.Interfaces;
+using FurnitureShopProjectRazil.Models;
+using FurnitureShopProjectRazil.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting; // IWebHostEnvironment
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.WebUtilities; // WebEncoders
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq; // .Any() üçün əlavə edildi
 using System.Security.Claims;
-using System.Text; // Encoding
-using System.Text.Encodings.Web; // HtmlEncoder
+using System.Text;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
 
 namespace FurnitureShopProjectRazil.Controllers
 {
@@ -20,7 +26,7 @@ namespace FurnitureShopProjectRazil.Controllers
         private readonly AppDbContext _context;
         private readonly IPasswordService _passwordService;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        private readonly IEmailSender _emailSender; // Microsoft.AspNetCore.Identity.UI.Services.IEmailSender
+        private readonly IEmailSender _emailSender;
         private readonly ILogger<AccountController> _logger;
 
         public AccountController(AppDbContext context,
@@ -72,7 +78,7 @@ namespace FurnitureShopProjectRazil.Controllers
                     ModelState.AddModelError(nameof(model.Email), "Bu e-poçt ünvanı artıq qeydiyyatdan keçib.");
                 }
 
-                if (!ModelState.IsValid) // Check again after custom validations
+                if (!ModelState.IsValid)
                 {
                     return View(model);
                 }
@@ -83,25 +89,24 @@ namespace FurnitureShopProjectRazil.Controllers
                 {
                     Username = model.Username,
                     Email = model.Email,
-                    Fullname = model.Fullname,
+                    FullName = model.FullName,
                     PasswordHash = passwordHash,
                     PasswordSalt = passwordSalt,
-                    ImagePath = "images/default-avatar.png", // wwwroot altındakı default şəkil yolu
+                    ImagePath = "images/default-avatar.png",
                     EmailConfirmed = false,
-                    EmailConfirmationToken = Guid.NewGuid().ToString(), // Token generasiyası
+                    EmailConfirmationToken = Guid.NewGuid().ToString(),
                     EmailConfirmationTokenExpiry = DateTime.UtcNow.AddDays(1)
                 };
 
                 _context.Users.Add(user);
-                await _context.SaveChangesAsync(); // User-i yadda saxla ki, ID alsın
+                await _context.SaveChangesAsync();
 
-                // Varsayılan "User" rolunu təyin et
-                var defaultRole = await _context.Roles.FirstOrDefaultAsync(r => r.Rolename == "User");
+                var defaultRole = await _context.Roles.FirstOrDefaultAsync(r => r.Name == "User"); // DÜZƏLDİLDİ: r.Rolename
                 if (defaultRole == null)
                 {
                     _logger.LogError("Default role 'User' not found in the database. Seeding might have failed.");
                     ModelState.AddModelError("", "Qeydiyyat zamanı sistem xətası. Zəhmət olmasa, daha sonra cəhd edin.");
-                    _context.Users.Remove(user); // Qeydiyyatı geri al
+                    _context.Users.Remove(user);
                     await _context.SaveChangesAsync();
                     return View(model);
                 }
@@ -110,24 +115,21 @@ namespace FurnitureShopProjectRazil.Controllers
 
                 _logger.LogInformation($"User {user.Username} registered successfully and assigned 'User' role.");
 
-                // E-poçt təsdiq linkini göndər
-                var tokenForUrl = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(user.EmailConfirmationToken));
+                var tokenForUrl = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(user.EmailConfirmationToken!));
                 var callbackUrl = Url.Action(nameof(ConfirmEmail), "Account",
-                    new { userId = user.Id, token = tokenForUrl }, protocol: Request.Scheme);
+                    new { userId = user.Id.ToString(), token = tokenForUrl }, protocol: Request.Scheme);
 
                 if (!string.IsNullOrEmpty(callbackUrl))
                 {
                     try
                     {
                         await _emailSender.SendEmailAsync(model.Email, "Hesabınızı Təsdiqləyin - FurnitureShop",
-                            $"Hörmətli {user.Fullname},<br><br>Hesabınızı təsdiqləmək üçün zəhmət olmasa <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>bura klikləyin</a>.<br><br>Əgər bu qeydiyyatı siz etməmisinizsə, bu e-poçta məhəl qoymayın.<br><br>Hörmətlə,<br>FurnitureShop Dəstək Komandası");
+                            $"Hörmətli {user.FullName},<br><br>Hesabınızı təsdiqləmək üçün zəhmət olmasa <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>bura klikləyin</a>.<br><br>Əgər bu qeydiyyatı siz etməmisinizsə, bu e-poçta məhəl qoymayın.<br><br>Hörmətlə,<br>FurnitureShop Dəstək Komandası");
                         _logger.LogInformation($"Confirmation email sent to {user.Email}.");
                     }
                     catch (Exception ex)
                     {
                         _logger.LogError(ex, $"Failed to send confirmation email to {user.Email}.");
-                        // İstifadəçiyə bildirmək olar ki, e-poçt göndərilmədi amma qeydiyyat uğurludur.
-                        // TempData["WarningMessage"] = "Qeydiyyatınız uğurlu oldu, lakin təsdiq e-poçtu göndərilərkən xəta baş verdi. Zəhmət olmasa, dəstək ilə əlaqə saxlayın.";
                     }
                 }
                 else
@@ -147,8 +149,8 @@ namespace FurnitureShopProjectRazil.Controllers
             {
                 return RedirectToAction(nameof(Register));
             }
-            ViewBag.Email = email; // Bu View-da göstərmək üçün
-            return View(); // Views/Account/RegisterConfirmation.cshtml
+            ViewBag.Email = email;
+            return View();
         }
 
         [HttpGet]
@@ -164,7 +166,7 @@ namespace FurnitureShopProjectRazil.Controllers
             if (!int.TryParse(userId, out int idAsInt))
             {
                 ViewBag.Message = "İstifadəçi ID-si düzgün formatda deyil.";
-                return View(); // Views/Account/ConfirmEmail.cshtml
+                return View();
             }
 
             var user = await _context.Users.FindAsync(idAsInt);
@@ -188,7 +190,7 @@ namespace FurnitureShopProjectRazil.Controllers
                     user.EmailConfirmationTokenExpiry.Value > DateTime.UtcNow)
                 {
                     user.EmailConfirmed = true;
-                    user.EmailConfirmationToken = null; // Tokeni istifadədən sonra sil
+                    user.EmailConfirmationToken = null;
                     user.EmailConfirmationTokenExpiry = null;
                     _context.Users.Update(user);
                     await _context.SaveChangesAsync();
@@ -211,11 +213,9 @@ namespace FurnitureShopProjectRazil.Controllers
                 _logger.LogError(ex, $"Error decoding email confirmation token for user {user.Email}. Token from URL: {token}");
                 ViewBag.Message = "E-poçt təsdiq linki etibarsız formatdadır.";
             }
-
-            return View(); // Views/Account/ConfirmEmail.cshtml
+            return View();
         }
 
-        // GET: /Account/Login
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Login(string? returnUrl = null)
@@ -228,7 +228,6 @@ namespace FurnitureShopProjectRazil.Controllers
             return View(new LoginViewModel());
         }
 
-        // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -243,7 +242,7 @@ namespace FurnitureShopProjectRazil.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _context.Users
-                                         .Include(u => u.UserRoles!) // Null forgiveness, çünki login üçün yüklənməlidir
+                                         .Include(u => u.UserRoles!)
                                              .ThenInclude(ur => ur.Role!)
                                          .FirstOrDefaultAsync(u => u.Username == model.UsernameOrEmail || u.Email == model.UsernameOrEmail);
 
@@ -257,14 +256,11 @@ namespace FurnitureShopProjectRazil.Controllers
                 if (!user.EmailConfirmed)
                 {
                     ModelState.AddModelError(string.Empty, "Daxil olmaq üçün e-poçt ünvanınızı təsdiqləməlisiniz.");
-                    // Opsional: Yenidən təsdiq linki göndərmək üçün bir seçim təklif edə bilərsiniz
-                    // ViewBag.ResendConfirmationEmail = user.Email;
                     return View(model);
                 }
 
                 await SignInUserAsync(user, model.RememberMe);
                 _logger.LogInformation($"User {user.Username} logged in successfully.");
-
                 return RedirectToLocal(returnUrl);
             }
             return View(model);
@@ -275,29 +271,33 @@ namespace FurnitureShopProjectRazil.Controllers
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Username), // HttpContext.User.Identity.Name
+                new Claim(ClaimTypes.Name, user.Username),
                 new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.GivenName, user.Fullname) // Adətən ad/soyad üçün istifadə olunur
+                new Claim(ClaimTypes.GivenName, user.FullName)
             };
 
             if (!string.IsNullOrEmpty(user.ImagePath))
             {
-                claims.Add(new Claim("ImagePath", user.ImagePath)); // Xüsusi claim
+                claims.Add(new Claim("ImagePath", user.ImagePath));
             }
 
             if (user.UserRoles != null)
             {
                 foreach (var userRole in user.UserRoles)
                 {
-                    if (userRole.Role != null && !string.IsNullOrEmpty(userRole.Role.Rolename))
+                    if (userRole.Role != null && !string.IsNullOrEmpty(userRole.Role.Name)) // DÜZƏLDİLDİ: Rolename
                     {
-                        claims.Add(new Claim(ClaimTypes.Role, userRole.Role.Rolename));
+                        claims.Add(new Claim(ClaimTypes.Role, userRole.Role.Name)); // DÜZƏLDİLDİ: Rolename
                     }
                 }
             }
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            var authProperties = new AuthenticationProperties { IsPersistent = isPersistent };
+            var authProperties = new AuthenticationProperties
+            {
+                IsPersistent = isPersistent,
+                ExpiresUtc = isPersistent ? DateTime.UtcNow.AddDays(30) : (DateTime?)null
+            };
 
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                                           new ClaimsPrincipal(claimsIdentity),
@@ -306,23 +306,23 @@ namespace FurnitureShopProjectRazil.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        // [Authorize] // Bu, artıq daxil olmuş istifadəçinin çıxış etməsi üçün məntiqlidir
         public async Task<IActionResult> Logout()
         {
+            var userName = User.Identity?.Name;
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            _logger.LogInformation($"User {User.Identity?.Name} logged out.");
+            _logger.LogInformation($"User {userName} logged out.");
             TempData["SuccessMessage"] = "Sistemdən uğurla çıxış etdiniz.";
             return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
-        [AllowAnonymous] // Hər kəs bu səhifəni görə bilər
+        [AllowAnonymous]
         public IActionResult AccessDenied()
         {
-            return View(); // Views/Account/AccessDenied.cshtml
+            return View();
         }
 
-        [Authorize] // Yalnız autentifikasiyadan keçmiş istifadəçilər
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> EditProfile()
         {
@@ -330,7 +330,7 @@ namespace FurnitureShopProjectRazil.Controllers
             if (string.IsNullOrEmpty(userIdStr) || !int.TryParse(userIdStr, out int userId))
             {
                 _logger.LogWarning("EditProfile GET: User ID not found in claims or invalid format.");
-                return Challenge(); // Və ya Forbid()
+                return Challenge();
             }
 
             var user = await _context.Users.FindAsync(userId);
@@ -344,10 +344,10 @@ namespace FurnitureShopProjectRazil.Controllers
             {
                 UserId = user.Id,
                 Username = user.Username,
-                Fullname = user.Fullname,
+                FullName = user.FullName,
                 CurrentImagePath = user.ImagePath
             };
-            return View(viewModel); // Views/Account/EditProfile.cshtml
+            return View(viewModel);
         }
 
         [Authorize]
@@ -362,9 +362,18 @@ namespace FurnitureShopProjectRazil.Controllers
                 return Forbid();
             }
 
+            if (string.IsNullOrWhiteSpace(model.FullName)) // FullName boş ola bilməz
+            {
+                ModelState.AddModelError(nameof(model.FullName), "Tam ad tələb olunur.");
+            }
+            if (string.IsNullOrWhiteSpace(model.Username)) // Username boş ola bilməz
+            {
+                ModelState.AddModelError(nameof(model.Username), "İstifadəçi adı tələb olunur.");
+            }
+
+
             if (!ModelState.IsValid)
             {
-                // Cari şəkli yenidən yüklə
                 var userForPath = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == model.UserId);
                 model.CurrentImagePath = userForPath?.ImagePath;
                 return View(model);
@@ -377,7 +386,6 @@ namespace FurnitureShopProjectRazil.Controllers
                 return NotFound();
             }
 
-            // Username unikallığını yoxla (əgər dəyişibsə)
             if (userToUpdate.Username != model.Username && await _context.Users.AnyAsync(u => u.Username == model.Username && u.Id != model.UserId))
             {
                 ModelState.AddModelError(nameof(model.Username), "Bu istifadəçi adı artıq mövcuddur.");
@@ -386,15 +394,15 @@ namespace FurnitureShopProjectRazil.Controllers
             }
 
             userToUpdate.Username = model.Username;
-            userToUpdate.Fullname = model.Fullname;
-            bool imageChanged = false;
+            userToUpdate.FullName = model.FullName;
+            bool claimsNeedRefresh = User.FindFirstValue(ClaimTypes.Name) != userToUpdate.Username ||
+                                     User.FindFirstValue(ClaimTypes.GivenName) != userToUpdate.FullName;
 
             if (model.Photo != null && model.Photo.Length > 0)
             {
-                // Köhnə şəkli sil (əgər default deyilsə və fərqlidirsə)
                 if (!string.IsNullOrEmpty(userToUpdate.ImagePath) && !userToUpdate.ImagePath.EndsWith("default-avatar.png"))
                 {
-                    var oldPhysicalPath = Path.Combine(_webHostEnvironment.WebRootPath, userToUpdate.ImagePath.TrimStart('/'));
+                    var oldPhysicalPath = Path.Combine(_webHostEnvironment.WebRootPath, userToUpdate.ImagePath.TrimStart('/', '\\'));
                     if (System.IO.File.Exists(oldPhysicalPath))
                     {
                         try { System.IO.File.Delete(oldPhysicalPath); }
@@ -414,14 +422,14 @@ namespace FurnitureShopProjectRazil.Controllers
                     {
                         await model.Photo.CopyToAsync(fileStream);
                     }
-                    userToUpdate.ImagePath = $"images/profiles/{uniqueFileName}"; // Relyativ yol
-                    imageChanged = true;
+                    userToUpdate.ImagePath = $"images/profiles/{uniqueFileName}";
+                    if (User.FindFirstValue("ImagePath") != userToUpdate.ImagePath) claimsNeedRefresh = true;
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, $"Error uploading new profile image for user {userToUpdate.Username}.");
                     ModelState.AddModelError(nameof(model.Photo), "Şəkil yüklənərkən xəta baş verdi.");
-                    model.CurrentImagePath = userToUpdate.ImagePath; // Köhnə şəkli göstər
+                    model.CurrentImagePath = userToUpdate.ImagePath;
                     return View(model);
                 }
             }
@@ -433,13 +441,14 @@ namespace FurnitureShopProjectRazil.Controllers
                 TempData["SuccessMessage"] = "Profil məlumatlarınız uğurla yeniləndi.";
                 _logger.LogInformation($"Profile updated for user {userToUpdate.Username}.");
 
-                // Əgər vacib claim-lər dəyişibsə, yenidən daxil etmək lazımdır
-                if (User.FindFirstValue(ClaimTypes.Name) != userToUpdate.Username ||
-                    User.FindFirstValue(ClaimTypes.GivenName) != userToUpdate.Fullname ||
-                    (imageChanged && User.FindFirstValue("ImagePath") != userToUpdate.ImagePath))
+                if (claimsNeedRefresh)
                 {
+                    var authResult = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                    bool isPersistent = authResult?.Properties?.IsPersistent ?? (User.Identity?.IsAuthenticated ?? false);
+
+
                     await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-                    await SignInUserAsync(userToUpdate, User.Identity?.IsAuthenticated ?? false); // isPersistent-i qoru
+                    await SignInUserAsync(userToUpdate, isPersistent);
                     _logger.LogInformation($"Claims updated and user re-signed in for {userToUpdate.Username}.");
                 }
             }
@@ -447,18 +456,17 @@ namespace FurnitureShopProjectRazil.Controllers
             {
                 _logger.LogError(ex, $"Concurrency error while updating profile for user {userToUpdate.Username}.");
                 ModelState.AddModelError("", "Məlumatlar yenilənərkən xəta baş verdi. Səhifəni yeniləyib təkrar cəhd edin.");
-                model.CurrentImagePath = userToUpdate.ImagePath;
-                return View(model); // Köhnə məlumatlarla formu göstər
+                model.CurrentImagePath = (await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == model.UserId))?.ImagePath;
+                return View(model);
             }
             return RedirectToAction(nameof(EditProfile));
         }
-
 
         [HttpGet]
         [AllowAnonymous]
         public IActionResult ForgotPassword()
         {
-            return View(new ForgotPasswordViewModel()); // Views/Account/ForgotPassword.cshtml
+            return View(new ForgotPasswordViewModel());
         }
 
         [HttpPost]
@@ -469,24 +477,24 @@ namespace FurnitureShopProjectRazil.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
-                if (user != null && user.EmailConfirmed) // Yalnız təsdiqlənmiş e-poçtlar üçün
+                if (user != null && user.EmailConfirmed)
                 {
-                    user.PasswordResetToken = Guid.NewGuid().ToString(); // Daha güclü token
-                    user.PasswordResetTokenExpiry = DateTime.UtcNow.AddMinutes(30); // Token 30 dəqiqə etibarlı
+                    user.PasswordResetToken = Guid.NewGuid().ToString();
+                    user.PasswordResetTokenExpiryDate = DateTime.UtcNow.AddMinutes(30); // DÜZƏLDİLDİ: PasswordResetTokenExpiry
 
                     _context.Users.Update(user);
                     await _context.SaveChangesAsync();
 
-                    var tokenForUrl = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(user.PasswordResetToken));
+                    var tokenForUrl = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(user.PasswordResetToken!));
                     var callbackUrl = Url.Action(nameof(ResetPassword), "Account",
-                        new { userId = user.Id, token = tokenForUrl }, protocol: Request.Scheme);
+                        new { userId = user.Id.ToString(), token = tokenForUrl }, protocol: Request.Scheme);
 
                     if (!string.IsNullOrEmpty(callbackUrl))
                     {
                         try
                         {
                             await _emailSender.SendEmailAsync(model.Email, "Parolunuzu Sıfırlayın - FurnitureShop",
-                                $"Hörmətli {user.Fullname},<br><br>Parolunuzu sıfırlamaq üçün zəhmət olmasa <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>bura klikləyin</a>.<br>Bu link 30 dəqiqə ərzində etibarlıdır.<br><br>Əgər bu tələbi siz etməmisinizsə, bu e-poçta məhəl qoymayın.<br><br>Hörmətlə,<br>FurnitureShop Dəstək Komandası");
+                                $"Hörmətli {user.FullName},<br><br>Parolunuzu sıfırlamaq üçün zəhmət olmasa <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>bura klikləyin</a>.<br>Bu link 30 dəqiqə ərzində etibarlıdır.<br><br>Əgər bu tələbi siz etməmisinizsə, bu e-poçta məhəl qoymayın.<br><br>Hörmətlə,<br>FurnitureShop Dəstək Komandası");
                             _logger.LogInformation($"Password reset email sent to {user.Email}.");
                         }
                         catch (Exception ex)
@@ -505,15 +513,10 @@ namespace FurnitureShopProjectRazil.Controllers
                 }
                 else
                 {
-                    _logger.LogWarning($"Password reset attempt for non-existent email: {model.Email}.");
+                    _logger.LogWarning($"Password reset attempt for non-existent or unconfirmed email: {model.Email}.");
                 }
-
-                // Hər zaman eyni mesajı göstər (təhlükəsizlik üçün)
                 TempData["InfoMessage"] = "Əgər daxil etdiyiniz e-poçt ünvanı sistemimizdə mövcuddursa və təsdiqlənibsə, şifrə sıfırlama linki göndərildi. Zəhmət olmasa, e-poçtunuzu yoxlayın.";
-                // EnterResetCode yerinə birbaşa bu səhifəyə yönləndirmək daha yaxşıdır, çünki link göndərilir, kod deyil.
-                // Amma əgər EnterResetCode view-unuz varsa və 6 rəqəmli kod istifadə edirsinizsə, o zaman
-                // RedirectToAction(nameof(EnterResetCode), new { email = model.Email });
-                return View("ForgotPasswordConfirmation"); // Views/Account/ForgotPasswordConfirmation.cshtml yaradın
+                return View("ForgotPasswordConfirmation");
             }
             return View(model);
         }
@@ -522,61 +525,12 @@ namespace FurnitureShopProjectRazil.Controllers
         [AllowAnonymous]
         public IActionResult ForgotPasswordConfirmation()
         {
-            // Bu view sadəcə "E-poçtunuza baxın" mesajını göstərəcək
             return View();
         }
 
-
-        // EnterResetCode action-ları sizin kodunuzda 6 rəqəmli kod üçündür.
-        // Əgər link göndərirsinizsə, bunlara ehtiyac yoxdur, birbaşa ResetPassword GET action-ı istifadə olunur.
-        // Sizin View-larınızda EnterResetCode.cshtml var idi. Mən o məntiqi qoruyaraq davam edirəm,
-        // amma token generasiyasını Guid ilə etdim. Əgər 6 rəqəmli kod istəyirsinizsə,
-        // ForgotPassword-da Random().Next() istifadə edin və PasswordResetToken-i string olaraq saxlayın.
-
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult EnterResetCode(string? email) // Bu action 6 rəqəmli kod üçün idi
-        {
-            if (string.IsNullOrEmpty(email))
-            {
-                return RedirectToAction(nameof(ForgotPassword));
-            }
-            // Bu action-u hələlik saxlayıram, amma link ilə sıfırlama üçün ResetPassword GET daha uyğundur.
-            // Əgər 6 rəqəmli kod göndərmisinizsə, bu action istifadə oluna bilər.
-            var model = new EnterResetCodeViewModel { Email = email! }; // EnterResetCodeViewModel yaradın
-            return View(model); // Views/Account/EnterResetCode.cshtml
-        }
-
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnterResetCode(EnterResetCodeViewModel model) // 6 rəqəmli kod üçün
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email &&
-                                                                     u.PasswordResetToken == model.Code && // Kod string olmalıdır
-                                                                     u.PasswordResetTokenExpiry.HasValue &&
-                                                                     u.PasswordResetTokenExpiry.Value > DateTime.UtcNow);
-            if (user == null)
-            {
-                ModelState.AddModelError(nameof(model.Code), "Təsdiq kodu yanlışdır və ya vaxtı bitib.");
-                return View(model);
-            }
-
-            // Kod düzgündürsə, URL-təhlükəsiz token ilə ResetPassword GET action-una yönləndir
-            // Və ya birbaşa ResetPassword View-una yönləndir (əgər ResetPasswordViewModel Code və Email ehtiva edirsə)
-            var tokenForUrl = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(user.PasswordResetToken!)); // Tokeni URL üçün kodla
-            return RedirectToAction(nameof(ResetPassword), new { userId = user.Id, token = tokenForUrl });
-        }
-
-
-        [HttpGet]
-        [AllowAnonymous]
-        public async Task<IActionResult> ResetPassword(string? userId, string? token) // Bu, linkdən gələn userId və token üçün
+        public async Task<IActionResult> ResetPassword(string? userId, string? token)
         {
             if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(token))
             {
@@ -586,7 +540,7 @@ namespace FurnitureShopProjectRazil.Controllers
 
             if (!int.TryParse(userId, out int idAsInt))
             {
-                TempData["ErrorMessage"] = "Parol sıfırlama linki etibarsızdır (istifadəçi).";
+                TempData["ErrorMessage"] = "Parol sıfırlama linki etibarsızdır (istifadəçi ID).";
                 return RedirectToAction(nameof(Login));
             }
 
@@ -603,14 +557,14 @@ namespace FurnitureShopProjectRazil.Controllers
             }
 
             if (user == null || user.PasswordResetToken != decodedToken ||
-                !user.PasswordResetTokenExpiry.HasValue || user.PasswordResetTokenExpiry.Value <= DateTime.UtcNow)
+                !user.PasswordResetTokenExpiryDate.HasValue || user.PasswordResetTokenExpiryDate.Value <= DateTime.UtcNow) // DÜZƏLDİLDİ: PasswordResetTokenExpiry
             {
                 TempData["ErrorMessage"] = "Parol sıfırlama linki etibarsızdır və ya vaxtı bitib.";
                 return RedirectToAction(nameof(Login));
             }
 
-            var model = new ResetPasswordViewModel { UserId = userId, Token = token }; // Token-i olduğu kimi ötür (URL üçün kodlanmış)
-            return View(model); // Views/Account/ResetPassword.cshtml
+            var model = new ResetPasswordViewModel { UserId = userId, Token = token };
+            return View(model);
         }
 
         [HttpPost]
@@ -633,7 +587,7 @@ namespace FurnitureShopProjectRazil.Controllers
             string? decodedToken = null;
             try
             {
-                decodedToken = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(model.Token!)); // Token View-dan gəlir
+                decodedToken = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(model.Token!));
             }
             catch (FormatException)
             {
@@ -642,7 +596,7 @@ namespace FurnitureShopProjectRazil.Controllers
             }
 
             if (user == null || user.PasswordResetToken != decodedToken ||
-                !user.PasswordResetTokenExpiry.HasValue || user.PasswordResetTokenExpiry.Value <= DateTime.UtcNow)
+                !user.PasswordResetTokenExpiryDate.HasValue || user.PasswordResetTokenExpiryDate.Value <= DateTime.UtcNow) // DÜZƏLDİLDİ: PasswordResetTokenExpiry
             {
                 ModelState.AddModelError("", "Parol sıfırlama tələbi etibarsızdır və ya vaxtı bitib. Zəhmət olmasa, yenidən cəhd edin.");
                 return View(model);
@@ -651,9 +605,8 @@ namespace FurnitureShopProjectRazil.Controllers
             _passwordService.CreatePasswordHash(model.Password, out byte[] newPasswordHash, out byte[] newPasswordSalt);
             user.PasswordHash = newPasswordHash;
             user.PasswordSalt = newPasswordSalt;
-            user.PasswordResetToken = null; // Tokeni istifadədən sonra sil
-            user.PasswordResetTokenExpiry = null;
-            // user.EmailConfirmed = true; // Parol sıfırlanırsa, e-poçtu da təsdiqlənmiş hesab edək
+            user.PasswordResetToken = null;
+            user.PasswordResetTokenExpiryDate = null; // DÜZƏLDİLDİ: PasswordResetTokenExpiry
 
             _context.Users.Update(user);
             await _context.SaveChangesAsync();
@@ -663,7 +616,6 @@ namespace FurnitureShopProjectRazil.Controllers
             return RedirectToAction(nameof(Login));
         }
 
-
         private IActionResult RedirectToLocal(string? returnUrl)
         {
             if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
@@ -672,8 +624,6 @@ namespace FurnitureShopProjectRazil.Controllers
             }
             else
             {
-                // Daxil olmuş istifadəçinin roluna görə yönləndirmə (əgər istəsəniz)
-                // if (User.IsInRole("Admin")) return RedirectToAction("Dashboard", "Admin");
                 return RedirectToAction("Index", "Home");
             }
         }

@@ -1,0 +1,39 @@
+﻿@model FurnitureShopProjectRazil.Models.Team
+@{
+    ViewData["Title"] = "Komanda Üzvünü Sil";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Silinmə Təsdiqi</h4>
+                        <h5>Aşağıdakı komanda üzvünü silmək istədiyinizə əminsinizmi?</h5>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Fullname)</dt>
+                            <dd class="col-sm-9">@Model.Fullname</dd>
+
+                            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Profession)</dt>
+                            <dd class="col-sm-9">@(Model.Profession?.Name ?? "Təyin edilməyib")</dd>
+
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <dt class="col-sm-3">Şəkil</dt>
+                                <dd class="col-sm-9"><img src="@Url.Content(Model.ImagePath)" alt="@Model.Fullname" style="max-width:100px;" /></dd>
+                            }
+                        </dl>
+
+                        <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger">Bəli, Sil</button>
+                            <a asp-action="Index" class="btn btn-secondary">Xeyr, İmtina Et</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

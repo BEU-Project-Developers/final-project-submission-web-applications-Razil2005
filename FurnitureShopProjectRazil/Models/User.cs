@@ -1,48 +1,53 @@
 ﻿// Models/User.cs
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic; // List üçün
 
 namespace FurnitureShopProjectRazil.Models
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
 
-        [MaxLength(255)]
-        public string? ImagePath { get; set; } // Qeydiyyatda default, sonra dəyişə bilər
+        [Required(ErrorMessage = "İstifadəçi adı tələb olunur.")]
+        [StringLength(100, ErrorMessage = "İstifadəçi adı 3-100 simvol aralığında olmalıdır.", MinimumLength = 3)]
+        public string Username { get; set; } // Modelde Username idi, qalsin
 
-        [NotMapped]
-        public IFormFile? Photo { get; set; }
+        [Required(ErrorMessage = "E-poçt ünvanı tələb olunur.")]
+        [EmailAddress(ErrorMessage = "Düzgün e-poçt ünvanı daxil edin.")]
+        [StringLength(256)]
+        public string Email { get; set; }
 
-        [Required(ErrorMessage = "İstifadəçi adı tələb olunur")]
-        [MaxLength(50)]
-        public string Username { get; set; } = null!;
+        [Required(ErrorMessage = "Tam ad tələb olunur.")]
+        [StringLength(150)]
+        public string FullName { get; set; } // FullName olaraq deyishdirildi
 
-        [Required(ErrorMessage = "Tam ad tələb olunur")]
-        [MaxLength(100)]
-        public string Fullname { get; set; } = null!;
+        [Required]
+        public byte[] PasswordHash { get; set; }
 
-        [Required(ErrorMessage = "E-poçt ünvanı tələb olunur")]
-        [MaxLength(100)]
-        [EmailAddress(ErrorMessage = "Düzgün e-poçt formatı daxil edin")]
-        public string Email { get; set; } = null!;
+        [Required]
+        public byte[] PasswordSalt { get; set; }
 
         public bool EmailConfirmed { get; set; } = false;
-
-        // IPasswordService ilə idarə olunacaq
-        public byte[]? PasswordHash { get; set; }
-        public byte[]? PasswordSalt { get; set; }
-
-        // Tokenlər
-        public string? EmailConfirmationToken { get; set; }
-        public DateTime? EmailConfirmationTokenExpiry { get; set; }
+        public string? EmailConfirmationToken { get; set; } // Deyishdirildi
+        public DateTime? EmailConfirmationTokenExpiry { get; set; } // Deyishdirildi
 
         public string? PasswordResetToken { get; set; }
-        public DateTime? PasswordResetTokenExpiry { get; set; }
+        public DateTime? PasswordResetTokenExpiryDate { get; set; } // Adini PasswordResetTokenExpiry olaraq deyishecem controller ile eyni olsun
 
-        public List<UserRole> UserRoles { get; set; } = new List<UserRole>();
+        public DateTime RegistrationDate { get; set; } = DateTime.UtcNow;
+
+        // ImagePath User modeline elave edildi (default avatar ve profil shekli uchun)
+        [MaxLength(255)]
+        public string? ImagePath { get; set; }
+
+        // PasswordResetCode ve PasswordResetCodeExpiryDate silindi, PasswordResetToken istifade olunur
+        // public string? PasswordResetCode { get; set; }
+        // public DateTime? PasswordResetCodeExpiryDate { get; set; }
+
+        // Naviqasiya Propertiləri
+        public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
+        public virtual UserDetails? UserDetails { get; set; } // Birə-bir əlaqə (əgər istifadə olunursa)
     }
 }
-
-// Models/Role.cs və Models/UserRole.cs əvvəlki kimi qalır.
